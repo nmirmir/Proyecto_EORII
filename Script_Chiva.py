@@ -1,11 +1,11 @@
 import time as tm
-from asyncua.sync import Server
+from asyncua.sync import Server, Client
 import json
 
 
 
 def data_collection(data): #funcion para sacar el dato de hora del documento en json
-    Aforo = {"aforo_mm_5":[],"aforo_mm_60":[],"Estado":[]}
+    Aforo = {"aforo_mm_5":[[],[],[]],"aforo_mm_60":[],"Estado":[[],[],[]]}
     contador = 0
     acum_aforo_mm = 0
     for i in data:
@@ -15,8 +15,12 @@ def data_collection(data): #funcion para sacar el dato de hora del documento en 
             Aforo["aforo_mm_60"].append(acum_aforo_mm)
             contador = 0
             acum_aforo_mm = 0
-        Aforo["aforo_mm_5"].append(i["aforo_mm"])
-        Aforo["Estado"].append(i["estado"])
+        Aforo["aforo_mm_5"][0].append(i["fecha"])
+        Aforo["aforo_mm_5"][1].append(i["hora"])
+        Aforo["aforo_mm_5"][2].append(i["aforo_mm"])
+        Aforo["Estado"][0].append(i["fecha"])
+        Aforo["Estado"][1].append(i["hora"])
+        Aforo["Estado"][2].append(i["estado"])
     return Aforo
 
 def init_server():
@@ -29,8 +33,8 @@ def init_server():
     servidor.set_server_name("OPC UA Simulation Server")
     
     # Configure endpoint
-    servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/CaudalServer") #IP Jaime
-    #servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer ") #IP Nicolas
+    servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/AforoServer") #IP Jaime
+    #servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53530/OPCUA/AforoServer ") #IP Nicolas
     # Configure authentication
     servidor.set_security_IDs(["Anonymous"])
     
@@ -59,27 +63,43 @@ def data_sending(idx,servidor,Aforo):
     Estado.set_writable()
     return Aforo_mm_60,Aforo_mm_5,Estado
 
-def actual_data(hour_server_url, node_id_fecha, node_id_hora):
+def actual_hour_data(hour_server_url, node_id_fecha, node_id_hora):
     with Client(hour_server_url) as client:
-        print(f"Conectado al servidor HORA - OPC UA en: {client_url}")
-        fecha_node = client.get_node(node_id_fecha)
-        hora_node = client.get_node(node_id_hora)
-        fecha_actual = fecha_node.read_value()
-        hora_actual = hora_node.read_value()
-        print(f"Datos obtenidos del primer servidor - Fecha: {fecha_actual}, Hora: {hora_actual}")
-        return fecha_actual, hora_actual
+        try: 
+            print(f"Conectado al servidor HORA - OPC UA en: {hour_server_url}")
+            fecha_node = client.get_node(node_id_fecha)
+            hora_node = client.get_node(node_id_hora)
+            fecha_actual = fecha_node.read_value()
+            hora_actual = hora_node.read_value()
+            print(f"Datos obtenidos del primer servidor - Fecha: {fecha_actual}, Hora: {hora_actual}")
+            return fecha_actual, hora_actual
+        except Exception as e:
+            print(f"Error al obtener los nodos: {e}")
+            return None, None
 
-def iterative_data(Aforo,Aforo_mm_5,Aforo_mm_60,Estado):
-    for index in range(len(Aforo["aforo_mm_5"])):
+def iterative_data(Aforo, Aforo_mm_5, Aforo_mm_60, Estado, hour_server_url, node_id_fecha, node_id_hora):
+    #for index in range(len(Aforo["aforo_mm_5"][0])):
+    while True:
         tm.sleep(1)
-        A5 = Aforo["aforo_mm_5"][index]
-        A60 = Aforo["aforo_mm_60"][index]
-        Estado = Aforo["Estado"][index]
-        print(A5,A60,Estado)
-        Aforo_mm_5.write_value(A5)
-        Aforo_mm_60.write_value(A60)
-        Estado.write_value(Estado)
-
+        fecha_actual, hora_actual = actual_hour_data(hour_server_url, node_id_fecha, node_id_hora)
+        if fecha_actual == None:
+            exit
+        i = 0
+        try:
+            while fecha_actual != Aforo["aforo_mm_5"][0][i] and hora_actual != Aforo["aforo_mm_5"][1][i]:
+                i += 1
+                if i > range(Aforo["aforo_mm_5"][0]):
+                    print("Hora no encontrada")
+                    raise Exception("Hora / Fecha no encontradas")
+            A5 = Aforo["aforo_mm_5"][2][i]
+            #A60 = Aforo["aforo_mm_60"][2][i]
+            Estado = Aforo["Estado"][2][i]
+            print(A5,Estado)
+            Aforo_mm_5.write_value(A5)
+            #Aforo_mm_60.write_value(A60)
+            Estado.write_value(Estado)
+        except Exception as e:
+            print(f"Excpecion interceptada:{e}")
 
 if __name__ == "__main__":
     servidor = None
@@ -87,7 +107,7 @@ if __name__ == "__main__":
         print("Starting OPC UA Servers...")
         
         # Load JSON data
-        with open('data.json', 'r') as file:
+        with open('chiva.json', 'r') as file:
             data = json.load(file)
 
         # Initialize and start server
@@ -104,7 +124,7 @@ if __name__ == "__main__":
         Aforo_mm_60, Aforo_mm_5, Estado = data_sending(idx, servidor, Aforo)
         print("Starting data iteration...")
 
-        iterative_data(Aforo, Aforo_mm_5, Aforo_mm_60,Estado)
+        iterative_data(Aforo, Aforo_mm_5, Aforo_mm_60,Estado,hour_server_url, node_id_fecha, node_id_hora)
 
     except Exception as e:
         print(f"An error occurred: {e}")

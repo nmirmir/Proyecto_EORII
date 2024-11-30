@@ -21,8 +21,8 @@ def init_server():
     servidor.set_server_name("OPC UA Simulation Server")
     
     # Configure endpoint
-    #servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/SimulationServer") #IP Jaime
-    servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer ") #IP Nicolas
+    servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/SimulationServer") #IP Jaime
+    #servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer ") #IP Nicolas
 
     
     # Configure authentication
@@ -62,7 +62,7 @@ if __name__ == "__main__":
         print("Starting OPC UA Server...")
         
         # Load JSON data
-        with open('data.json', 'r') as file:
+        with open('chiva.json', 'r') as file:
             data = json.load(file)
 
         # Initialize and start server
