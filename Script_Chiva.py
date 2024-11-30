@@ -12,7 +12,7 @@ def data_collection(data): #funcion para sacar el dato de hora del documento en 
         contador += 1
         acum_aforo_mm += i["aforo_mm"]
         if contador == 12:
-            Aforo["aforo_mm_60"].append(i["aforo_mm"]) = acum_aforo_mm
+            Aforo["aforo_mm_60"].append(acum_aforo_mm)
             contador = 0
             acum_aforo_mm = 0
         Aforo["aforo_mm_5"].append(i["aforo_mm"])
