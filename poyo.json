@@ -1,0 +1,6920 @@
+[
+    {
+        "fecha": "2024-10-28",
+        "hora": "10:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "10:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "10:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "10:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "10:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "10:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "10:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "11:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "11:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "11:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "11:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "11:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "11:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "11:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "11:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "11:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "11:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "11:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "11:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "12:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "12:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "12:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "12:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "12:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "12:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "12:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "12:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "12:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "12:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "12:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "12:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "13:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "13:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "13:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "13:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "13:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "13:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "13:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "13:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "13:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "13:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "13:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "13:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "14:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "14:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "14:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "14:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "14:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "14:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "14:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "14:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "14:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "14:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "14:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "14:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "15:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "15:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "15:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "15:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "15:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "15:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "15:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "15:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "15:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "15:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "15:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "15:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "16:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "16:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "16:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "16:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "16:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "16:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "16:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "16:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "16:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "16:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "16:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "16:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "17:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "17:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "17:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "17:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "17:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "17:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "17:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "17:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "17:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "17:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "17:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "17:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "18:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "18:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "18:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "18:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "18:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "18:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "18:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "18:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "18:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "18:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "18:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "18:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "19:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "19:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "19:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "19:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "19:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "19:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "19:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "19:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "19:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "19:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "19:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "19:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "20:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "20:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "20:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "20:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "20:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "20:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "20:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "20:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "20:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "20:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "20:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "20:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "21:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "21:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "21:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "21:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "21:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "21:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "21:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "21:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "21:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "21:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "21:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "21:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "22:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "22:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "22:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "22:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "22:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "22:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "22:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "22:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "22:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "22:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "22:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "22:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "23:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "23:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "23:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "23:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "23:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "23:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "23:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "23:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "23:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "23:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "23:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-28",
+        "hora": "23:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "00:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "00:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "00:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "00:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "00:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "00:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "00:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "00:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "00:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "00:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "00:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "00:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "01:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "01:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "01:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "01:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "01:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "01:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "01:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "01:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "01:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "01:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "01:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "01:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "02:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "02:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "02:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "02:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "02:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "02:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "02:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "02:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "02:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "02:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "02:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "02:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "03:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "03:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "03:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "03:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "03:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "03:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "03:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "03:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "03:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "03:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "03:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "03:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "04:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "04:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "04:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "04:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "04:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "04:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "04:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "04:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "04:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "04:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "04:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "04:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "05:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "05:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "05:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "05:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "05:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "05:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "05:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "05:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "05:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "05:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "05:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "05:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "06:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "06:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "06:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "06:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "06:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "06:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "06:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "06:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "06:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "06:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "06:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "06:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "07:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "07:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "07:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "07:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "07:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "07:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "07:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "07:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "07:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "07:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "07:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "07:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "08:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "08:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "08:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "08:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "08:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "08:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "08:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "08:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "08:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "08:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "08:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "08:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "09:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "09:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "09:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "09:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "09:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "09:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "09:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "09:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "09:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "09:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "09:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "09:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "10:00:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "10:05:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "10:10:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "10:15:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "10:20:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "10:25:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "10:30:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "10:35:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "10:40:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "10:45:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "10:50:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "10:55:00",
+        "caudal_m3_s": "0",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "11:00:00",
+        "caudal_m3_s": "0,295",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "11:05:00",
+        "caudal_m3_s": "1,122",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "11:10:00",
+        "caudal_m3_s": "2,802",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "11:15:00",
+        "caudal_m3_s": "2,802",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "11:20:00",
+        "caudal_m3_s": "26,757",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "11:25:00",
+        "caudal_m3_s": "57,633",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "11:30:00",
+        "caudal_m3_s": "208,207",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "11:35:00",
+        "caudal_m3_s": "257,751",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "11:40:00",
+        "caudal_m3_s": "264,438",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "11:45:00",
+        "caudal_m3_s": "260,182",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "11:50:00",
+        "caudal_m3_s": "257,143",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "11:55:00",
+        "caudal_m3_s": "251,976",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "12:00:00",
+        "caudal_m3_s": "248,632",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "12:05:00",
+        "caudal_m3_s": "248,632",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "12:10:00",
+        "caudal_m3_s": "248,632",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "12:15:00",
+        "caudal_m3_s": "248,632",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "12:20:00",
+        "caudal_m3_s": "205,167",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "12:25:00",
+        "caudal_m3_s": "195,802",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "12:30:00",
+        "caudal_m3_s": "187,654",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "12:35:00",
+        "caudal_m3_s": "180,247",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "12:40:00",
+        "caudal_m3_s": "173,827",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "12:45:00",
+        "caudal_m3_s": "167,654",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "12:50:00",
+        "caudal_m3_s": "161,728",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "12:55:00",
+        "caudal_m3_s": "154,568",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "13:00:00",
+        "caudal_m3_s": "154,568",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "13:05:00",
+        "caudal_m3_s": "154,568",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "13:10:00",
+        "caudal_m3_s": "154,568",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "13:15:00",
+        "caudal_m3_s": "126,667",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "13:20:00",
+        "caudal_m3_s": "120",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "13:25:00",
+        "caudal_m3_s": "114,074",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "13:30:00",
+        "caudal_m3_s": "107,16",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "13:35:00",
+        "caudal_m3_s": "100,988",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "13:40:00",
+        "caudal_m3_s": "95,556",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "13:45:00",
+        "caudal_m3_s": "90,909",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "13:50:00",
+        "caudal_m3_s": "86,061",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "13:55:00",
+        "caudal_m3_s": "81,212",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "14:00:00",
+        "caudal_m3_s": "76,627",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "14:05:00",
+        "caudal_m3_s": "76,627",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "14:10:00",
+        "caudal_m3_s": "68,817",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "14:15:00",
+        "caudal_m3_s": "68,817",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "14:20:00",
+        "caudal_m3_s": "61,893",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "14:25:00",
+        "caudal_m3_s": "61,893",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "14:30:00",
+        "caudal_m3_s": "55,858",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "14:35:00",
+        "caudal_m3_s": "55,858",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "14:40:00",
+        "caudal_m3_s": "50",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "14:45:00",
+        "caudal_m3_s": "50",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "14:50:00",
+        "caudal_m3_s": "50",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "14:55:00",
+        "caudal_m3_s": "42,941",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "15:00:00",
+        "caudal_m3_s": "40,441",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "15:05:00",
+        "caudal_m3_s": "40,441",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "15:10:00",
+        "caudal_m3_s": "40,441",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "15:15:00",
+        "caudal_m3_s": "40,441",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "15:20:00",
+        "caudal_m3_s": "40,441",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "15:25:00",
+        "caudal_m3_s": "40,441",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "15:30:00",
+        "caudal_m3_s": "40,441",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "15:35:00",
+        "caudal_m3_s": "40,441",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "15:40:00",
+        "caudal_m3_s": "40,441",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "15:45:00",
+        "caudal_m3_s": "40,441",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "15:50:00",
+        "caudal_m3_s": "28,703",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "15:55:00",
+        "caudal_m3_s": "28,703",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "16:00:00",
+        "caudal_m3_s": "28,703",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "16:05:00",
+        "caudal_m3_s": "28,703",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "16:10:00",
+        "caudal_m3_s": "28,703",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "16:15:00",
+        "caudal_m3_s": "33,382",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "16:20:00",
+        "caudal_m3_s": "33,382",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "16:25:00",
+        "caudal_m3_s": "37,206",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "16:30:00",
+        "caudal_m3_s": "37,206",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "16:35:00",
+        "caudal_m3_s": "43,824",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "16:40:00",
+        "caudal_m3_s": "47,941",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "16:45:00",
+        "caudal_m3_s": "52,663",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "16:50:00",
+        "caudal_m3_s": "58,343",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "16:55:00",
+        "caudal_m3_s": "64,379",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "17:00:00",
+        "caudal_m3_s": "71,657",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "17:05:00",
+        "caudal_m3_s": "81,212",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "17:10:00",
+        "caudal_m3_s": "95,152",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "17:15:00",
+        "caudal_m3_s": "111,605",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "17:20:00",
+        "caudal_m3_s": "129,63",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "17:25:00",
+        "caudal_m3_s": "151,605",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "17:30:00",
+        "caudal_m3_s": "197,284",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "17:35:00",
+        "caudal_m3_s": "280,547",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "17:40:00",
+        "caudal_m3_s": "280,547",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "17:45:00",
+        "caudal_m3_s": "493,333",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "17:50:00",
+        "caudal_m3_s": "584,647",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "17:55:00",
+        "caudal_m3_s": "691,021",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "18:00:00",
+        "caudal_m3_s": "809,594",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "18:05:00",
+        "caudal_m3_s": "993,604",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "18:10:00",
+        "caudal_m3_s": "1199,762",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "18:15:00",
+        "caudal_m3_s": "1387,039",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "18:20:00",
+        "caudal_m3_s": "1540,397",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "18:25:00",
+        "caudal_m3_s": "1686,755",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "18:30:00",
+        "caudal_m3_s": "1756,953",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "18:35:00",
+        "caudal_m3_s": "1756,953",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "18:40:00",
+        "caudal_m3_s": "1891,391",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "18:45:00",
+        "caudal_m3_s": "1941,059",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "18:50:00",
+        "caudal_m3_s": "2015,128",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "18:55:00",
+        "caudal_m3_s": "2282,904",
+        "estado": true
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "19:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "19:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "19:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "19:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "19:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "19:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "19:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "19:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "19:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "19:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "19:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "19:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "20:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "20:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "20:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "20:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "20:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "20:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "20:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "20:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "20:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "20:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "20:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "20:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "21:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "21:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "21:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "21:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "21:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "21:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "21:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "21:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "21:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "21:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "21:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "21:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "22:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "22:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "22:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "22:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "22:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "22:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "22:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "22:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "22:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "22:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "22:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "22:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "23:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "23:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "23:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "23:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "23:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "23:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "23:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "23:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "23:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "23:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "23:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-29",
+        "hora": "23:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "00:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "00:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "00:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "00:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "00:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "00:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "00:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "00:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "00:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "00:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "00:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "00:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "01:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "01:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "01:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "01:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "01:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "01:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "01:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "01:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "01:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "01:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "01:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "01:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "02:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "02:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "02:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "02:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "02:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "02:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "02:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "02:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "02:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "02:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "02:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "02:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "03:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "03:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "03:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "03:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "03:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "03:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "03:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "03:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "03:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "03:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "03:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "03:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "04:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "04:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "04:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "04:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "04:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "04:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "04:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "04:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "04:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "04:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "04:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "04:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "05:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "05:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "05:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "05:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "05:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "05:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "05:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "05:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "05:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "05:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "05:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "05:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "06:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "06:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "06:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "06:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "06:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "06:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "06:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "06:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "06:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "06:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "06:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "06:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "07:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "07:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "07:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "07:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "07:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "07:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "07:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "07:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "07:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "07:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "07:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "07:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "08:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "08:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "08:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "08:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "08:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "08:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "08:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "08:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "08:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "08:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "08:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "08:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "09:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "09:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "09:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "09:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "09:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "09:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "09:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "09:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "09:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "09:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "09:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "09:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "10:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "10:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "10:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "10:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "10:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "10:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "10:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "10:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "10:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "10:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "10:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "10:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "11:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "11:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "11:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "11:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "11:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "11:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "11:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "11:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "11:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "11:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "11:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "11:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "12:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "12:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "12:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "12:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "12:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "12:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "12:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "12:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "12:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "12:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "12:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "12:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "13:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "13:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "13:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "13:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "13:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "13:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "13:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "13:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "13:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "13:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "13:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "13:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "14:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "14:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "14:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "14:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "14:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "14:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "14:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "14:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "14:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "14:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "14:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "14:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "15:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "15:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "15:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "15:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "15:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "15:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "15:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "15:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "15:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "15:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "15:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "15:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "16:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "16:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "16:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "16:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "16:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "16:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "16:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "16:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "16:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "16:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "16:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "16:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "17:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "17:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "17:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "17:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "17:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "17:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "17:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "17:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "17:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "17:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "17:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "17:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "18:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "18:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "18:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "18:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "18:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "18:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "18:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "18:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "18:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "18:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "18:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "18:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "19:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "19:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "19:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "19:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "19:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "19:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "19:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "19:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "19:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "19:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "19:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "19:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "20:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "20:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "20:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "20:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "20:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "20:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "20:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "20:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "20:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "20:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "20:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "20:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "21:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "21:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "21:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "21:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "21:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "21:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "21:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "21:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "21:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "21:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "21:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "21:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "22:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "22:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "22:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "22:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "22:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "22:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "22:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "22:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "22:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "22:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "22:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "22:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "23:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "23:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "23:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "23:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "23:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "23:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "23:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "23:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "23:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "23:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "23:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-30",
+        "hora": "23:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "00:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "00:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "00:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "00:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "00:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "00:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "00:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "00:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "00:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "00:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "00:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "00:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "01:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "01:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "01:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "01:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "01:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "01:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "01:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "01:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "01:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "01:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "01:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "01:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "02:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "02:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "02:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "02:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "02:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "02:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "02:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "02:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "02:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "02:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "02:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "02:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "03:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "03:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "03:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "03:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "03:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "03:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "03:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "03:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "03:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "03:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "03:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "03:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "04:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "04:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "04:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "04:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "04:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "04:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "04:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "04:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "04:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "04:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "04:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "04:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "05:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "05:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "05:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "05:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "05:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "05:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "05:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "05:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "05:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "05:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "05:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "05:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "06:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "06:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "06:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "06:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "06:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "06:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "06:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "06:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "06:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "06:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "06:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "06:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "07:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "07:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "07:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "07:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "07:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "07:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "07:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "07:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "07:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "07:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "07:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "07:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "08:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "08:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "08:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "08:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "08:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "08:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "08:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "08:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "08:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "08:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "08:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "08:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "09:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "09:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "09:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "09:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "09:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "09:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "09:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "09:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "09:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "09:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "09:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "09:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "10:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "10:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "10:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "10:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "10:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "10:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "10:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "10:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "10:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "10:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "10:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "10:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "11:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "11:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "11:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "11:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "11:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "11:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "11:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "11:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "11:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "11:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "11:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "11:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "12:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "12:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "12:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "12:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "12:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "12:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "12:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "12:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "12:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "12:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "12:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "12:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "13:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "13:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "13:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "13:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "13:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "13:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "13:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "13:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "13:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "13:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "13:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "13:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "14:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "14:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "14:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "14:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "14:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "14:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "14:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "14:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "14:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "14:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "14:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "14:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "15:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "15:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "15:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "15:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "15:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "15:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "15:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "15:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "15:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "15:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "15:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "15:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "16:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "16:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "16:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "16:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "16:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "16:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "16:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "16:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "16:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "16:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "16:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "16:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "17:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "17:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "17:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "17:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "17:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "17:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "17:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "17:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "17:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "17:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "17:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "17:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "18:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "18:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "18:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "18:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "18:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "18:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "18:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "18:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "18:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "18:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "18:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "18:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "19:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "19:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "19:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "19:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "19:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "19:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "19:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "19:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "19:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "19:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "19:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "19:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "20:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "20:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "20:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "20:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "20:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "20:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "20:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "20:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "20:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "20:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "20:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "20:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "21:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "21:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "21:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "21:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "21:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "21:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "21:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "21:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "21:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "21:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "21:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "21:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "22:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "22:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "22:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "22:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "22:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "22:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "22:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "22:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "22:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "22:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "22:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "22:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "23:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "23:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "23:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "23:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "23:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "23:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "23:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "23:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "23:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "23:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "23:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-10-31",
+        "hora": "23:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "00:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "00:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "00:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "00:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "00:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "00:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "00:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "00:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "00:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "00:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "00:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "00:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "01:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "01:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "01:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "01:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "01:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "01:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "01:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "01:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "01:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "01:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "01:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "01:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "02:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "02:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "02:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "02:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "02:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "02:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "02:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "02:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "02:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "02:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "02:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "02:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "03:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "03:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "03:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "03:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "03:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "03:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "03:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "03:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "03:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "03:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "03:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "03:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "04:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "04:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "04:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "04:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "04:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "04:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "04:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "04:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "04:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "04:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "04:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "04:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "05:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "05:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "05:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "05:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "05:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "05:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "05:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "05:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "05:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "05:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "05:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "05:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "06:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "06:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "06:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "06:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "06:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "06:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "06:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "06:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "06:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "06:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "06:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "06:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "07:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "07:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "07:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "07:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "07:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "07:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "07:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "07:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "07:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "07:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "07:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "07:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "08:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "08:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "08:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "08:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "08:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "08:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "08:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "08:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "08:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "08:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "08:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "08:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "09:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "09:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "09:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "09:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "09:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "09:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "09:30:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "09:35:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "09:40:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "09:45:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "09:50:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "09:55:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "10:00:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "10:05:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "10:10:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "10:15:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "10:20:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    },
+    {
+        "fecha": "2024-11-01",
+        "hora": "10:25:00",
+        "caudal_m3_s": 0,
+        "estado": "FALLO"
+    }
+]
