@@ -9,8 +9,6 @@ def data_collection(data): #funcion para sacar el dato de hora del documento en 
     for i in data:
         Horario["Fechas"].append(i["fecha"])
         Horario["Horas"].append(i["hora"])
-        tm.sleep(1)
-        print(f"Added: {i['fecha']}, {i['hora']}")
     return Horario
 
 def init_server():
@@ -23,18 +21,22 @@ def init_server():
     servidor.set_server_name("OPC UA Simulation Server")
     
     # Configure endpoint
-    servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer ")
+    servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/SimulationServer")
     
     # Configure authentication
     servidor.set_security_IDs(["Anonymous"])
     
     uri = "http://www.epsa.upv.es/entornos/NJFJ"
     idx = servidor.register_namespace(uri)
+    print(idx)
+    tm.sleep(1)
     return idx, servidor
 
 def data_sending(idx,servidor,Horario):
     # Add an object and a writable variable
     mi_obj = servidor.nodes.objects.add_object(idx, "Objeto_Horario")
+    print(f"NodeId del objeto creado: {mi_obj.nodeid}")
+    tm.sleep(1)
     fecha = mi_obj.add_variable(idx, "Fecha", Horario["Fechas"][0])
     hora = mi_obj.add_variable(idx, "Hora", Horario["Horas"][0])
     hora.set_writable()
@@ -73,7 +75,6 @@ if __name__ == "__main__":
         
         print("Setting up OPC UA variables...")
         fecha, hora = data_sending(idx, servidor, Horario)
-
         print("Starting data iteration...")
         iterative_data(Horario, hora, fecha)
 
