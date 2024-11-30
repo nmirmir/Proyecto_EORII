@@ -29,29 +29,45 @@ def init_server():
     servidor.set_server_name("OPC UA Simulation Server")
     
     # Configure endpoint
-    #servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/SimulationServer") #IP Jaime
-    servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer ") #IP Nicolas
+    servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/CaudalServer") #IP Jaime
+    #servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer ") #IP Nicolas
     # Configure authentication
     servidor.set_security_IDs(["Anonymous"])
     
-    uri = "http://www.epsa.upv.es/entornos/NJFJ"
+    uri = "http://www.epsa.upv.es/entornos/NJFJ/Caudal"
     idx = servidor.register_namespace(uri)
     print(f'nuestro idx: {idx}')
     tm.sleep(1)
     return idx, servidor
 
-def data_sending(idx,servidor,Horario):
+def hour_server():
+    hour_server = "opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer"
+    node_id_fecha = "ns=2;s=Objeto_Horario.Fecha"
+    node_id_hora = "ns=2;s=Objeto_Horario.Hora"
+    return hour_server, node_id_fecha, node_id_hora
+
+def data_sending(idx,servidor,Aforo):
     # Add an object and a writable variable
     mi_obj = servidor.nodes.objects.add_object(idx, "Objeto_Aforo")
     print(f"NodeId del objeto creado: {mi_obj.nodeid}")
     tm.sleep(1)
-    Aforo_mm_5 = mi_obj.add_variable(idx, "Aforo_mm_5", Horario["aforo_mm_5"][0])
-    Aforo_mm_60 = mi_obj.add_variable(idx, "Aforo_mm_60", Horario["aforo_mm_60"][0])
-    Estado = mi_obj.add_variable(idx, "Estado", Horario["Estado"][0])
+    Aforo_mm_5 = mi_obj.add_variable(idx, "Aforo_mm_5", Aforo["aforo_mm_5"][0])
+    Aforo_mm_60 = mi_obj.add_variable(idx, "Aforo_mm_60", Aforo["aforo_mm_60"][0])
+    Estado = mi_obj.add_variable(idx, "Estado", Aforo["Estado"][0])
     Aforo_mm_5.set_writable()
     Aforo_mm_60.set_writable()
     Estado.set_writable()
     return Aforo_mm_60,Aforo_mm_5,Estado
+
+def actual_data(hour_server_url, node_id_fecha, node_id_hora):
+    with Client(hour_server_url) as client:
+        print(f"Conectado al servidor HORA - OPC UA en: {client_url}")
+        fecha_node = client.get_node(node_id_fecha)
+        hora_node = client.get_node(node_id_hora)
+        fecha_actual = fecha_node.read_value()
+        hora_actual = hora_node.read_value()
+        print(f"Datos obtenidos del primer servidor - Fecha: {fecha_actual}, Hora: {hora_actual}")
+        return fecha_actual, hora_actual
 
 def iterative_data(Aforo,Aforo_mm_5,Aforo_mm_60,Estado):
     for index in range(len(Aforo["aforo_mm_5"])):
@@ -68,26 +84,27 @@ def iterative_data(Aforo,Aforo_mm_5,Aforo_mm_60,Estado):
 if __name__ == "__main__":
     servidor = None
     try:
-        print("Starting OPC UA Server...")
+        print("Starting OPC UA Servers...")
         
         # Load JSON data
         with open('data.json', 'r') as file:
             data = json.load(file)
 
         # Initialize and start server
-        idx, servidor = init_server()
-        servidor.start()
+        idx, servidor_aforo = init_server()
+        hour_server_url, node_id_fecha, node_id_hora = hour_server()
+        servidor_aforo.start()
         print("Server started successfully!")
-        tm.sleep(0.1)
 
         # Process and send data
-        print("Processing data...")
-        Horario = data_collection(data)
+        print("Processing data (aforo)...")
+        Aforo = data_collection(data)
         
         print("Setting up OPC UA variables...")
-        fecha, hora = data_sending(idx, servidor, Horario)
+        Aforo_mm_60, Aforo_mm_5, Estado = data_sending(idx, servidor, Aforo)
         print("Starting data iteration...")
-        iterative_data(Horario, hora, fecha)
+        while True:
+            iterative_data(Aforo, Aforo_mm_5, Aforo_mm_60,Estado)
 
     except Exception as e:
         print(f"An error occurred: {e}")
