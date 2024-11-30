@@ -103,8 +103,8 @@ if __name__ == "__main__":
         print("Setting up OPC UA variables...")
         Aforo_mm_60, Aforo_mm_5, Estado = data_sending(idx, servidor, Aforo)
         print("Starting data iteration...")
-        while True:
-            iterative_data(Aforo, Aforo_mm_5, Aforo_mm_60,Estado)
+
+        iterative_data(Aforo, Aforo_mm_5, Aforo_mm_60,Estado)
 
     except Exception as e:
         print(f"An error occurred: {e}")
