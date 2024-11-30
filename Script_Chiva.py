@@ -30,11 +30,11 @@ def init_server():
     # Configure security settings
     from asyncua import ua
     servidor.set_security_policy([ua.SecurityPolicyType.NoSecurity])
-    servidor.set_server_name("OPC UA Simulation Server")
+    servidor.set_server_name("OPC UA Simulation Server Aforo")
     
     # Configure endpoint
-    servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/AforoServer") #IP Jaime
-    #servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53530/OPCUA/AforoServer ") #IP Nicolas
+    servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/AforoServer") #IP Jaime
+    #servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53540/OPCUA/AforoServer ") #IP Nicolas
     # Configure authentication
     servidor.set_security_IDs(["Anonymous"])
     
@@ -45,7 +45,7 @@ def init_server():
     return idx, servidor
 
 def hour_server():
-    hour_server = "opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer"
+    hour_server = "opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/SimulationServer"
     node_id_fecha = "ns=2;s=Objeto_Horario.Fecha"
     node_id_hora = "ns=2;s=Objeto_Horario.Hora"
     return hour_server, node_id_fecha, node_id_hora
@@ -83,12 +83,12 @@ def iterative_data(Aforo, Aforo_mm_5, Aforo_mm_60, Estado, hour_server_url, node
         tm.sleep(1)
         fecha_actual, hora_actual = actual_hour_data(hour_server_url, node_id_fecha, node_id_hora)
         if fecha_actual == None:
-            exit
+            break
         i = 0
         try:
             while fecha_actual != Aforo["aforo_mm_5"][0][i] and hora_actual != Aforo["aforo_mm_5"][1][i]:
                 i += 1
-                if i > range(Aforo["aforo_mm_5"][0]):
+                if i > len(Aforo["aforo_mm_5"][0]):
                     print("Hora no encontrada")
                     raise Exception("Hora / Fecha no encontradas")
             A5 = Aforo["aforo_mm_5"][2][i]
@@ -121,7 +121,7 @@ if __name__ == "__main__":
         Aforo = data_collection(data)
         
         print("Setting up OPC UA variables...")
-        Aforo_mm_60, Aforo_mm_5, Estado = data_sending(idx, servidor, Aforo)
+        Aforo_mm_60, Aforo_mm_5, Estado = data_sending(idx, servidor_aforo, Aforo)
         print("Starting data iteration...")
 
         iterative_data(Aforo, Aforo_mm_5, Aforo_mm_60,Estado,hour_server_url, node_id_fecha, node_id_hora)
