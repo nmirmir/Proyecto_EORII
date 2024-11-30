@@ -21,14 +21,16 @@ def init_server():
     servidor.set_server_name("OPC UA Simulation Server")
     
     # Configure endpoint
-    servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/SimulationServer")
+    servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/SimulationServer") #IP Jaime
+    #servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer ") #IP Nicolas
+
     
     # Configure authentication
     servidor.set_security_IDs(["Anonymous"])
     
     uri = "http://www.epsa.upv.es/entornos/NJFJ"
     idx = servidor.register_namespace(uri)
-    print(idx)
+    print(f'nuestro idx: {idx}')
     tm.sleep(1)
     return idx, servidor
 
