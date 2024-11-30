@@ -5,11 +5,19 @@ import json
 
 
 def data_collection(data): #funcion para sacar el dato de hora del documento en json
-    Horario = {"Fechas":[],"Horas":[]}
+    Aforo = {"aforo_mm_5":[],"aforo_mm_60":[],"Estado":[]}
+    contador = 0
+    acum_aforo_mm = 0
     for i in data:
-        Horario["Fechas"].append(i["fecha"])
-        Horario["Horas"].append(i["hora"])
-    return Horario
+        contador += 1
+        acum_aforo_mm += i["aforo_mm"]
+        if contador == 12:
+            Aforo["aforo_mm_60"].append(i["aforo_mm"]) = acum_aforo_mm
+            contador = 0
+            acum_aforo_mm = 0
+        Aforo["aforo_mm_5"].append(i["aforo_mm"])
+        Aforo["Estado"].append(i["estado"])
+    return Aforo
 
 def init_server():
     # Create and configure the server
@@ -21,10 +29,8 @@ def init_server():
     servidor.set_server_name("OPC UA Simulation Server")
     
     # Configure endpoint
-    servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/SimulationServer") #IP Jaime
-    #servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer ") #IP Nicolas
-
-    
+    #servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/SimulationServer") #IP Jaime
+    servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer ") #IP Nicolas
     # Configure authentication
     servidor.set_security_IDs(["Anonymous"])
     
@@ -36,24 +42,27 @@ def init_server():
 
 def data_sending(idx,servidor,Horario):
     # Add an object and a writable variable
-    mi_obj = servidor.nodes.objects.add_object(idx, "Objeto_Horario")
+    mi_obj = servidor.nodes.objects.add_object(idx, "Objeto_Aforo")
     print(f"NodeId del objeto creado: {mi_obj.nodeid}")
     tm.sleep(1)
-    fecha = mi_obj.add_variable(idx, "Fecha", Horario["Fechas"][0])
-    hora = mi_obj.add_variable(idx, "Hora", Horario["Horas"][0])
-    hora.set_writable()
-    fecha.set_writable()
-    return fecha,hora
+    Aforo_mm_5 = mi_obj.add_variable(idx, "Aforo_mm_5", Horario["aforo_mm_5"][0])
+    Aforo_mm_60 = mi_obj.add_variable(idx, "Aforo_mm_60", Horario["aforo_mm_60"][0])
+    Estado = mi_obj.add_variable(idx, "Estado", Horario["Estado"][0])
+    Aforo_mm_5.set_writable()
+    Aforo_mm_60.set_writable()
+    Estado.set_writable()
+    return Aforo_mm_60,Aforo_mm_5,Estado
 
-def iterative_data(Horario,hora,fecha):
-    for index,f in enumerate(Horario["Fechas"]):
+def iterative_data(Aforo,Aforo_mm_5,Aforo_mm_60,Estado):
+    for index in range(len(Aforo["aforo_mm_5"])):
         tm.sleep(1)
-        f = Horario["Fechas"][index]
-        h = Horario["Horas"][index]
-        print(f,h)
-        fecha.write_value(f)
-        hora.write_value(h)
-
+        A5 = Aforo["aforo_mm_5"][index]
+        A60 = Aforo["aforo_mm_60"][index]
+        Estado = Aforo["Estado"][index]
+        print(A5,A60,Estado)
+        Aforo_mm_5.write_value(A5)
+        Aforo_mm_60.write_value(A60)
+        Estado.write_value(Estado)
 
 
 if __name__ == "__main__":
