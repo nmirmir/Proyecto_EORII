@@ -10,23 +10,33 @@ def data_collection(data): #funcion para sacar el dato de hora del documento en 
         Horario["Fechas"].append(i["fecha"])
         Horario["Horas"].append(i["hora"])
         tm.sleep(1)
-        print(Horario["Fechas"].append(i["fecha"]),
-        Horario["Horas"].append(i["hora"]))
+        print(f"Added: {i['fecha']}, {i['hora']}")
     return Horario
 
 def init_server():
     # Create and configure the server
     servidor = Server()
-    servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer")
+    
+    # Configure security settings
+    from asyncua import ua
+    servidor.set_security_policy([ua.SecurityPolicyType.NoSecurity])
+    servidor.set_server_name("OPC UA Simulation Server")
+    
+    # Configure endpoint
+    servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer ")
+    
+    # Configure authentication
+    servidor.set_security_IDs(["Anonymous"])
+    
     uri = "http://www.epsa.upv.es/entornos/NJFJ"
     idx = servidor.register_namespace(uri)
-    return idx,servidor
+    return idx, servidor
 
 def data_sending(idx,servidor,Horario):
     # Add an object and a writable variable
     mi_obj = servidor.nodes.objects.add_object(idx, "Objeto_Horario")
     fecha = mi_obj.add_variable(idx, "Fecha", Horario["Fechas"][0])
-    hora = mi_obj.add_variable(idx, "Hora", Horario["Horas"][1])
+    hora = mi_obj.add_variable(idx, "Hora", Horario["Horas"][0])
     hora.set_writable()
     fecha.set_writable()
     return fecha,hora
@@ -43,27 +53,35 @@ def iterative_data(Horario,hora,fecha):
 
 
 if __name__ == "__main__":
-    servidor = None  # Initialize servidor to None
+    servidor = None
     try:
-        # Cargamos el JSON
+        print("Starting OPC UA Server...")
+        
+        # Load JSON data
         with open('data.json', 'r') as file:
             data = json.load(file)
 
-        # inciamos el server
+        # Initialize and start server
         idx, servidor = init_server()
+        servidor.start()
+        print("Server started successfully!")
+        tm.sleep(0.1)
 
-        # Metemos los datos en un diccionario que almacena listas
+        # Process and send data
+        print("Processing data...")
         Horario = data_collection(data)
         
-        # Creamos objeto y las variables de fech y hora, les damos un valor inicial y hacemos que se puedan modificar
+        print("Setting up OPC UA variables...")
         fecha, hora = data_sending(idx, servidor, Horario)
 
-        # Modificamos los valore de las variables
+        print("Starting data iteration...")
         iterative_data(Horario, hora, fecha)
 
     except Exception as e:
         print(f"An error occurred: {e}")
     
     finally:
-        if servidor:  # Check if servidor is not None before stopping
-            servidor.stop()  # Ensure the server stops when exiting
+        if servidor:
+            print("Stopping server...")
+            servidor.stop()
+            print("Server stopped.")
