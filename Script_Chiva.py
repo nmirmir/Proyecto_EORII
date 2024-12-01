@@ -24,25 +24,41 @@ def data_collection(data): #funcion para sacar el dato de hora del documento en 
     return Aforo
 
 def init_server():
-    # Create and configure the server
-    servidor = Server()
-    
-    # Configure security settings
-    from asyncua import ua
-    servidor.set_security_policy([ua.SecurityPolicyType.NoSecurity])
-    servidor.set_server_name("OPC UA Simulation Server Aforo")
-    
-    # Configure endpoint
-    servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/AforoServer") #IP Jaime
-    #servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53540/OPCUA/AforoServer ") #IP Nicolas
-    # Configure authentication
-    servidor.set_security_IDs(["Anonymous"])
-    
-    uri = "http://www.epsa.upv.es/entornos/NJFJ/Caudal"
-    idx = servidor.register_namespace(uri)
-    print(f'nuestro idx: {idx}')
-    tm.sleep(1)
-    return idx, servidor
+    try:
+        start_time = tm.time()
+        timeout = 5  # 5 seconds timeout
+        
+        # Create and configure the server
+        servidor = Server()
+        
+        # Configure security settings
+        from asyncua import ua
+        servidor.set_security_policy([ua.SecurityPolicyType.NoSecurity])
+        servidor.set_server_name("OPC UA Simulation Server Aforo")
+        
+        # Configure endpoint
+        servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/AforoServer")
+        
+        # Configure authentication
+        servidor.set_security_IDs(["Anonymous"])
+        
+        uri = "http://www.epsa.upv.es/entornos/NJFJ/Caudal"
+        idx = servidor.register_namespace(uri)
+        
+        # Start server with timeout check
+        servidor.start()
+        if tm.time() - start_time > timeout:
+            raise TimeoutError("Server initialization took too long")
+            
+        print(f'nuestro idx: {idx}')
+        return idx, servidor
+        
+    except TimeoutError as te:
+        print(f"Timeout error: {te}")
+        raise
+    except Exception as e:
+        print(f"Error initializing server: {e}")
+        raise
 
 def hour_server():
     hour_server = "opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/SimulationServer"
@@ -113,10 +129,20 @@ if __name__ == "__main__":
         # Initialize and start server
         idx, servidor_aforo = init_server()
         hour_server_url, node_id_fecha, node_id_hora = hour_server()
-        servidor_aforo.start()
-        print("Server started successfully!")
+        
+        # Add timeout for server start
+        start_time = tm.time()
+        timeout = 5  # 5 seconds timeout
+        
+        try:
+            servidor_aforo.start()
+            print("Server started successfully!")
+        except Exception as e:
+            if tm.time() - start_time >= timeout:
+                raise TimeoutError("Server failed to start within 5 seconds")
+            raise e
 
-        # Process and send data
+        # Rest of your code...
         print("Processing data (aforo)...")
         Aforo = data_collection(data)
         
@@ -124,8 +150,10 @@ if __name__ == "__main__":
         Aforo_mm_60, Aforo_mm_5, Estado = data_sending(idx, servidor_aforo, Aforo)
         print("Starting data iteration...")
 
-        iterative_data(Aforo, Aforo_mm_5, Aforo_mm_60,Estado,hour_server_url, node_id_fecha, node_id_hora)
+        iterative_data(Aforo, Aforo_mm_5, Aforo_mm_60, Estado, hour_server_url, node_id_fecha, node_id_hora)
 
+    except TimeoutError as te:
+        print(f"Timeout error: {te}")
     except Exception as e:
         print(f"An error occurred: {e}")
     
