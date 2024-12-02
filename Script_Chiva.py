@@ -24,41 +24,25 @@ def data_collection(data): #funcion para sacar el dato de hora del documento en 
     return Aforo
 
 def init_server():
-    try:
-        start_time = tm.time()
-        timeout = 5  # 5 seconds timeout
-        
-        # Create and configure the server
-        servidor = Server()
-        
-        # Configure security settings
-        from asyncua import ua
-        servidor.set_security_policy([ua.SecurityPolicyType.NoSecurity])
-        servidor.set_server_name("OPC UA Simulation Server Aforo")
-        
-        # Configure endpoint
-        servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/AforoServer")
-        
-        # Configure authentication
-        servidor.set_security_IDs(["Anonymous"])
-        
-        uri = "http://www.epsa.upv.es/entornos/NJFJ/Caudal"
-        idx = servidor.register_namespace(uri)
-        
-        # Start server with timeout check
-        servidor.start()
-        if tm.time() - start_time > timeout:
-            raise TimeoutError("Server initialization took too long")
-            
-        print(f'nuestro idx: {idx}')
-        return idx, servidor
-        
-    except TimeoutError as te:
-        print(f"Timeout error: {te}")
-        raise
-    except Exception as e:
-        print(f"Error initializing server: {e}")
-        raise
+    # Create and configure the server
+    servidor = Server()
+    
+    # Configure security settings
+    from asyncua import ua
+    servidor.set_security_policy([ua.SecurityPolicyType.NoSecurity])
+    servidor.set_server_name("OPC UA Simulation Server Aforo")
+    
+    # Configure endpoint
+    servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/AforoServer") #IP Jaime
+    #servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53540/OPCUA/AforoServer ") #IP Nicolas
+    # Configure authentication
+    servidor.set_security_IDs(["Anonymous"])
+    
+    uri = "http://www.epsa.upv.es/entornos/NJFJ"
+    idx = servidor.register_namespace(uri)
+    print(f'nuestro idx: {idx}')
+    tm.sleep(1)
+    return idx, servidor
 
 def hour_server():
     hour_server = "opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/SimulationServer"
@@ -71,9 +55,9 @@ def data_sending(idx,servidor,Aforo):
     mi_obj = servidor.nodes.objects.add_object(idx, "Objeto_Aforo")
     print(f"NodeId del objeto creado: {mi_obj.nodeid}")
     tm.sleep(1)
-    Aforo_mm_5 = mi_obj.add_variable(idx, "Aforo_mm_5", Aforo["aforo_mm_5"][0])
+    Aforo_mm_5 = mi_obj.add_variable(idx, "Aforo_mm_5", Aforo["aforo_mm_5"][2][0])
     Aforo_mm_60 = mi_obj.add_variable(idx, "Aforo_mm_60", Aforo["aforo_mm_60"][0])
-    Estado = mi_obj.add_variable(idx, "Estado", Aforo["Estado"][0])
+    Estado = mi_obj.add_variable(idx, "Estado", Aforo["Estado"][2][0])
     Aforo_mm_5.set_writable()
     Aforo_mm_60.set_writable()
     Estado.set_writable()
@@ -84,9 +68,15 @@ def actual_hour_data(hour_server_url, node_id_fecha, node_id_hora):
         try: 
             print(f"Conectado al servidor HORA - OPC UA en: {hour_server_url}")
             fecha_node = client.get_node(node_id_fecha)
+            print(f"Fecha NodeId válido: {fecha_node.nodeid}")
             hora_node = client.get_node(node_id_hora)
-            fecha_actual = fecha_node.read_value()
-            hora_actual = hora_node.read_value()
+            print(f"Hora NodeId válido: {hora_node.nodeid}")
+            #fecha_actual = fecha_node.read_value()
+            fecha_actual = client.get_node(node_id_fecha).read_value()
+            print(f"Valor actual del nodo Fecha: {fecha_actual}")
+            #hora_actual = hora_node.read_value()
+            hora_actual = client.get_node(node_id_hora).read_value()
+            print(f"Valor actual del nodo Hora: {hora_actual}")
             print(f"Datos obtenidos del primer servidor - Fecha: {fecha_actual}, Hora: {hora_actual}")
             return fecha_actual, hora_actual
         except Exception as e:
@@ -129,20 +119,10 @@ if __name__ == "__main__":
         # Initialize and start server
         idx, servidor_aforo = init_server()
         hour_server_url, node_id_fecha, node_id_hora = hour_server()
-        
-        # Add timeout for server start
-        start_time = tm.time()
-        timeout = 5  # 5 seconds timeout
-        
-        try:
-            servidor_aforo.start()
-            print("Server started successfully!")
-        except Exception as e:
-            if tm.time() - start_time >= timeout:
-                raise TimeoutError("Server failed to start within 5 seconds")
-            raise e
+        servidor_aforo.start()
+        print("Server started successfully!")
 
-        # Rest of your code...
+        # Process and send data
         print("Processing data (aforo)...")
         Aforo = data_collection(data)
         
@@ -150,10 +130,8 @@ if __name__ == "__main__":
         Aforo_mm_60, Aforo_mm_5, Estado = data_sending(idx, servidor_aforo, Aforo)
         print("Starting data iteration...")
 
-        iterative_data(Aforo, Aforo_mm_5, Aforo_mm_60, Estado, hour_server_url, node_id_fecha, node_id_hora)
+        iterative_data(Aforo, Aforo_mm_5, Aforo_mm_60, Estado,hour_server_url, node_id_fecha, node_id_hora)
 
-    except TimeoutError as te:
-        print(f"Timeout error: {te}")
     except Exception as e:
         print(f"An error occurred: {e}")
     
