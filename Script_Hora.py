@@ -43,6 +43,7 @@ def data_sending(idx,servidor,Horario):
     hora = mi_obj.add_variable(idx, "Hora", Horario["Horas"][0])
     hora.set_writable()
     fecha.set_writable()
+    hora.set_writable()
     return fecha,hora
 
 def iterative_data(Horario,hora,fecha):
@@ -53,7 +54,6 @@ def iterative_data(Horario,hora,fecha):
         print(f,h)
         fecha.write_value(f)
         hora.write_value(h)
-
 
 
 if __name__ == "__main__":

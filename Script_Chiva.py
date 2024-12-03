@@ -46,8 +46,8 @@ def init_server():
 
 def hour_server():
     hour_server = "opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/SimulationServer"
-    node_id_fecha = "ns=2;s=Objeto_Horario.Fecha"
-    node_id_hora = "ns=2;s=Objeto_Horario.Hora"
+    node_id_fecha = "ns=2;i=2"
+    node_id_hora = "ns=2;i=3"
     return hour_server, node_id_fecha, node_id_hora
 
 def data_sending(idx,servidor,Aforo):
@@ -64,18 +64,23 @@ def data_sending(idx,servidor,Aforo):
     return Aforo_mm_60,Aforo_mm_5,Estado
 
 def actual_hour_data(hour_server_url, node_id_fecha, node_id_hora):
-    with Client(hour_server_url) as client:
+    with Client("opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/SimulationServer") as client:
         try: 
+            client.connect()
             print(f"Conectado al servidor HORA - OPC UA en: {hour_server_url}")
             fecha_node = client.get_node(node_id_fecha)
-            print(f"Fecha NodeId válido: {fecha_node.nodeid}")
             hora_node = client.get_node(node_id_hora)
             print(f"Hora NodeId válido: {hora_node.nodeid}")
-            #fecha_actual = fecha_node.read_value()
-            fecha_actual = client.get_node(node_id_fecha).read_value()
+            print(f"Fecha NodeId válido: {fecha_node.nodeid}")
+            fecha_actual = fecha_node.read_value()
+            #fecha_actual = fecha_node.get_value()
+            #fecha_actual = client.get_values(fecha_node)
+            #fecha_actual = client.get_node(node_id_fecha).read_value()
             print(f"Valor actual del nodo Fecha: {fecha_actual}")
-            #hora_actual = hora_node.read_value()
-            hora_actual = client.get_node(node_id_hora).read_value()
+            hora_actual = hora_node.read_value()
+            #hora_actual = hora_node.get_value()
+            #hora_actual = client.get_values(hora_node)
+            #hora_actual = client.get_node(node_id_hora).read_value()
             print(f"Valor actual del nodo Hora: {hora_actual}")
             print(f"Datos obtenidos del primer servidor - Fecha: {fecha_actual}, Hora: {hora_actual}")
             return fecha_actual, hora_actual
@@ -103,7 +108,10 @@ def iterative_data(Aforo, Aforo_mm_5, Aforo_mm_60, Estado, hour_server_url, node
             print(A5,Estado)
             Aforo_mm_5.write_value(A5)
             #Aforo_mm_60.write_value(A60)
-            Estado.write_value(Estado)
+            if Estado == True:
+                Estado.write_value(1)
+            else:
+                Estado.write_value(1)
         except Exception as e:
             print(f"Excpecion interceptada:{e}")
 
