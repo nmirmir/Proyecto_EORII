@@ -59,6 +59,13 @@ class Server_hora:
         self.fechaHora.write_value(timestamp)
 
 if __name__ == "__main__":
-    server = Server_hora()
-    server.run()
+    try:
+        server = Server_hora()
+        server.run()
+    except Exception as e:
+        print(f"An error occurred: {e}")    
+    finally:
+        if server:
+            server.server.stop()
+            print("Server stopped.")    
 
