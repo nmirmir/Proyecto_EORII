@@ -5,23 +5,23 @@ import json
 
 
 def data_collection(data): #funcion para sacar el dato de hora del documento en json
-    Aforo = {"aforo_mm_5":[[],[],[]],"aforo_mm_60":[],"Estado":[[],[],[]]}
+    Pluviometro = {"pluviometro_mm_5":[[],[],[]],"pluviometro_mm_60":[],"Estado":[[],[],[]]}
     contador = 0
-    acum_aforo_mm = 0
+    acum_pluviometro_mm = 0
     for i in data:
         contador += 1
-        acum_aforo_mm += i["aforo_mm"]
+        acum_pluviometro_mm += i["pluviometro_mm"]
         if contador == 12:
-            Aforo["aforo_mm_60"].append(acum_aforo_mm)
+            Pluviometro["pluviometro_mm_60"].append(acum_pluviometro_mm)
             contador = 0
-            acum_aforo_mm = 0
-        Aforo["aforo_mm_5"][0].append(i["fecha"])
-        Aforo["aforo_mm_5"][1].append(i["hora"])
-        Aforo["aforo_mm_5"][2].append(i["aforo_mm"])
-        Aforo["Estado"][0].append(i["fecha"])
-        Aforo["Estado"][1].append(i["hora"])
-        Aforo["Estado"][2].append(i["estado"])
-    return Aforo
+            acum_pluviometro_mm = 0
+        Pluviometro["pluviometro_mm_5"][0].append(i["fecha"])
+        Pluviometro["pluviometro_mm_5"][1].append(i["hora"])
+        Pluviometro["pluviometro_mm_5"][2].append(i["pluviometro_mm"])
+        Pluviometro["Estado"][0].append(i["fecha"])
+        Pluviometro["Estado"][1].append(i["hora"])
+        Pluviometro["Estado"][2].append(i["estado"])
+    return Pluviometro
 
 def init_server():
     # Create and configure the server
@@ -30,11 +30,10 @@ def init_server():
     # Configure security settings
     from asyncua import ua
     servidor.set_security_policy([ua.SecurityPolicyType.NoSecurity])
-    servidor.set_server_name("OPC UA Simulation Server Aforo")
+    servidor.set_server_name("OPC UA Simulation Server Pluviometro")
     
     # Configure endpoint
-    servidor.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/AforoServer") #IP Jaime
-    #servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53540/OPCUA/AforoServer ") #IP Nicolas
+    servidor.set_endpoint("opc.tcp://DESKTOP-M1F986I:53540/OPCUA/PluviometroServer")
     # Configure authentication
     servidor.set_security_IDs(["Anonymous"])
     
@@ -50,18 +49,18 @@ def hour_server():
     node_id_hora = "ns=2;i=3"
     return hour_server, node_id_fecha, node_id_hora
 
-def data_sending(idx,servidor,Aforo):
+def data_sending(idx,servidor,Pluviometro):
     # Add an object and a writable variable
-    mi_obj = servidor.nodes.objects.add_object(idx, "Objeto_Aforo")
+    mi_obj = servidor.nodes.objects.add_object(idx, "Objeto_Pluviometro")
     print(f"NodeId del objeto creado: {mi_obj.nodeid}")
     tm.sleep(1)
-    Aforo_mm_5 = mi_obj.add_variable(idx, "Aforo_mm_5", Aforo["aforo_mm_5"][2][0])
-    Aforo_mm_60 = mi_obj.add_variable(idx, "Aforo_mm_60", Aforo["aforo_mm_60"][0])
-    Estado = mi_obj.add_variable(idx, "Estado", Aforo["Estado"][2][0])
-    Aforo_mm_5.set_writable()
-    Aforo_mm_60.set_writable()
+    Pluviometro_mm_5 = mi_obj.add_variable(idx, "Pluviometro_mm_5", Pluviometro["pluviometro_mm_5"][2][0])
+    Pluviometro_mm_60 = mi_obj.add_variable(idx, "Pluviometro_mm_60", Pluviometro["pluviometro_mm_60"][0])
+    Estado = mi_obj.add_variable(idx, "Estado", Pluviometro["Estado"][2][0])
+    Pluviometro_mm_5.set_writable()
+    Pluviometro_mm_60.set_writable()
     Estado.set_writable()
-    return Aforo_mm_60,Aforo_mm_5,Estado
+    return Pluviometro_mm_60,Pluviometro_mm_5,Estado
 
 def actual_hour_data(hour_server_url, node_id_fecha, node_id_hora):
     with Client("opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/SimulationServer") as client:
@@ -88,8 +87,8 @@ def actual_hour_data(hour_server_url, node_id_fecha, node_id_hora):
             print(f"Error al obtener los nodos: {e}")
             return None, None
 
-def iterative_data(Aforo, Aforo_mm_5, Aforo_mm_60, Estado, hour_server_url, node_id_fecha, node_id_hora):
-    #for index in range(len(Aforo["aforo_mm_5"][0])):
+def iterative_data(Pluviometro, Pluviometro_mm_5, Pluviometro_mm_60, Estado, hour_server_url, node_id_fecha, node_id_hora):
+    #for index in range(len(Pluviometro["pluviometro_mm_5"][0])):
     while True:
         tm.sleep(1)
         fecha_actual, hora_actual = actual_hour_data(hour_server_url, node_id_fecha, node_id_hora)
@@ -97,17 +96,17 @@ def iterative_data(Aforo, Aforo_mm_5, Aforo_mm_60, Estado, hour_server_url, node
             break
         i = 0
         try:
-            while fecha_actual != Aforo["aforo_mm_5"][0][i] and hora_actual != Aforo["aforo_mm_5"][1][i]:
+            while fecha_actual != Pluviometro["pluviometro_mm_5"][0][i] and hora_actual != Pluviometro["pluviometro_mm_5"][1][i]:
                 i += 1
-                if i > len(Aforo["aforo_mm_5"][0]):
+                if i > len(Pluviometro["pluviometro_mm_5"][0]):
                     print("Hora no encontrada")
                     raise Exception("Hora / Fecha no encontradas")
-            A5 = Aforo["aforo_mm_5"][2][i]
-            #A60 = Aforo["aforo_mm_60"][2][i]
-            Estado = Aforo["Estado"][2][i]
-            print(A5,Estado)
-            Aforo_mm_5.write_value(A5)
-            #Aforo_mm_60.write_value(A60)
+            P5 = Pluviometro["pluviometro_mm_5"][2][i]
+            #A60 = Pluviometro["pluviometro_mm_60"][2][i]
+            Estado = Pluviometro["Estado"][2][i]
+            print(P5,Estado)
+            Pluviometro_mm_5.write_value(P5)
+            #Pluviometro_mm_60.write_value(A60)
             if Estado == True:
                 Estado.write_value(1)
             else:
@@ -119,26 +118,27 @@ if __name__ == "__main__":
     servidor = None
     try:
         print("Starting OPC UA Servers...")
-        
+        ip_server_hora = "opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer"
+        ip_server_pluviometro = "opc.tcp://DESKTOP-M1F986I:53540/OPCUA/PluviometroServer"
         # Load JSON data
         with open('chiva.json', 'r') as file:
             data = json.load(file)
 
         # Initialize and start server
-        idx, servidor_aforo = init_server()
+        idx, servidor_pluviometro = init_server()
         hour_server_url, node_id_fecha, node_id_hora = hour_server()
-        servidor_aforo.start()
+        servidor_pluviometro.start()
         print("Server started successfully!")
 
         # Process and send data
-        print("Processing data (aforo)...")
-        Aforo = data_collection(data)
+        print("Processing data (pluviometro)...")
+        Pluviometro = data_collection(data)
         
         print("Setting up OPC UA variables...")
-        Aforo_mm_60, Aforo_mm_5, Estado = data_sending(idx, servidor_aforo, Aforo)
+        Pluviometro_mm_60, Pluviometro_mm_5, Estado = data_sending(idx, servidor_pluviometro, Pluviometro)
         print("Starting data iteration...")
 
-        iterative_data(Aforo, Aforo_mm_5, Aforo_mm_60, Estado,hour_server_url, node_id_fecha, node_id_hora)
+        iterative_data(Pluviometro, Pluviometro_mm_5, Pluviometro_mm_60, Estado,hour_server_url, node_id_fecha, node_id_hora)
 
     except Exception as e:
         print(f"An error occurred: {e}")

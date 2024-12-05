@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OPCUAModel xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+    <Equipment>
+        <Device id="Device001">
+            <Name>Sensor de Aforo</Name>
+            <Description>Monitorea el pluviómetro de Chiva</Description>
+            <Type>Sensor</Type>
+            <DataPoints>
+                <DataPoint id="DP001">
+                    <Name>Pluviómetro cada 5 minutos</Name>
+                    <DataType>Float</DataType>
+                    <Unit>mm/h</Unit>
+                    <Value>0</Value>
+                </DataPoint>
+                <DataPoint id="DP002">
+                    <Name>Pluviómetro cada hora</Name>
+                    <DataType>Float</DataType>
+                    <Unit>mm/h</Unit>
+                    <Value>0</Value>
+                </DataPoint>
+            </DataPoints>
+        </Device>
+        <Device id="Device002">
+            <Name>Sensor de Aforo</Name>
+            <Description>Monitorea el aforo del Barranco del Poio</Description>
+            <Type>Sensor</Type>
+            <DataPoints>
+                <DataPoint id="DP003">
+                    <Name>Aforo</Name>
+                    <DataType>Float</DataType>
+                    <Unit>m3/s</Unit>
+                    <Value>0</Value>
+                </DataPoint>
+                <DataPoint id="DP004">
+                    <Name>SetPointAforo</Name>
+                    <DataType>Float</DataType>
+                    <Unit>m3/s</Unit>
+                    <Value>0</Value>
+                </DataPoint>
+            </DataPoints>
+        </Device>
+        <Device id="Device003">
+            <Name>Hora</Name>
+            <Description>Referencia de tiempo Real</Description>
+            <Type>RTC</Type>
+            <DataPoints>
+                <DataPoint id="DP005">
+                    <Name>Hora</Name>
+                    <DataType>String</DataType>
+                    <Unit>hh:mm:ss</Unit>
+                    <Value>0</Value>        
+                </DataPoint>
+            </DataPoints>
+        </Device>
+    </Equipment>
+</OPCUAModel>
