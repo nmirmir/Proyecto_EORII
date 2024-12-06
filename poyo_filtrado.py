@@ -25,7 +25,7 @@ for index, row in df.iterrows():
     
     # Verificar si hay un fallo en el sensor -si es 'FALLO'
     if estado_sensor == 'FALLO':
-        estado = 'FALLO'
+        estado = False
         caudal_m3_s = 0  
         # Cambiar el caudal a 0 en lugar de FALLO , esto lo hago mas que otra cosa para hacer como si el sensor 'muere' o falla
     else:
