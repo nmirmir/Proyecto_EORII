@@ -3,7 +3,7 @@ from asyncua.sync import Server
 from asyncua import ua
 import json
 import datetime
-
+import xml.etree.ElementTree as ET
 multiplicador = 1
 
 class Server_hora:
@@ -58,7 +58,41 @@ class Server_hora:
     def send_data(self,timestamp):
         self.fechaHora.write_value(timestamp)
 
+    def load_model(self):
+        tree = ET.parse('Modelo_datos.xml')
+        return tree.getroot()
+
 if __name__ == "__main__":
+    print("-------------------")
+    server = Server_hora()
+    root = server.load_model()
+    print(root)
+    root = server.load_model()
+    
+    # Define the namespace
+    ns = {'ns': 'http://opcfoundation.org/UA/2011/03/UANodeSet.xsd'}
+    
+    # Get Equipment node with namespace
+    equipment = root.find('.//ns:Equipment', ns)
+    
+    # Find specifically the Aforo device
+    aforo_device = equipment.find(".//ns:Device[@id='S_Aforo']", ns)
+    
+    print(f"Device ID: {aforo_device.get('id')}")
+    print(f"Name: {aforo_device.find('ns:Name', ns).text}")
+    print(f"Description: {aforo_device.find('ns:Description', ns).text}")
+    print(f"Type: {aforo_device.find('ns:Type', ns).text}")
+    
+    # Get DataPoints for Aforo
+    datapoints = aforo_device.find('ns:DataPoints', ns)
+    print("\nDataPoints:")
+    for datapoint in datapoints.findall('ns:DataPoint', ns):
+        print(f"\t- ID: {datapoint.get('id')}")
+        print(f"\t  Name: {datapoint.find('ns:Name', ns).text}")
+        print(f"\t  DataType: {datapoint.find('ns:DataType', ns).text}")
+        print(f"\t  Unit: {datapoint.find('ns:Unit', ns).text}")
+        print(f"\t  Value: {datapoint.find('ns:Value', ns).text}")
+        print("-------------------")
     try:
         server = Server_hora()
         server.run()

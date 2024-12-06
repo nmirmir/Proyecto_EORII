@@ -24,6 +24,12 @@
                     <Unit>True/False</Unit>
                     <Value>True</Value>
                 </DataPoint>
+                <DataPoint id="Hora_Pluviometro">
+                    <Name>Hora</Name>
+                    <DataType>DateTime</DataType>
+                    <Unit>hh:mm:ss</Unit>
+                    <Value>0</Value>        
+                </DataPoint>
             </DataPoints>
         </Device>
         <Device id="S_Aforo">
@@ -36,6 +42,18 @@
                     <DataType>Float</DataType>
                     <Unit>m3/s</Unit>
                     <Value>0</Value>
+                </DataPoint>
+                <DataPoint id="Aforo_Estado">
+                    <Name>Estado del aforo</Name>
+                    <DataType>Boolean</DataType>
+                    <Unit>True/False</Unit>
+                    <Value>True</Value>
+                </DataPoint>
+                <DataPoint id="Hora_Aforo">
+                    <Name>Hora</Name>
+                    <DataType>DateTime</DataType>
+                    <Unit>hh:mm:ss</Unit>
+                    <Value>0</Value>        
                 </DataPoint>
             </DataPoints>
         </Device>
