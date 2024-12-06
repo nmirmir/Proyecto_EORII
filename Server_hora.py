@@ -11,7 +11,7 @@ class Server_hora:
         self.server = Server()
         self.server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
         self.server.set_server_name("OPC UA Simulation Server")
-        self.server.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53530/OPCUA/SimulationServer") #IP Jaime
+        self.server.set_endpoint("opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer") #IP Nicolas
         self.server.set_security_IDs(["Anonymous"])
         self.uri = "http://www.epsa.upv.es/entornos/NJFJ"
         self.idx = self.server.register_namespace(self.uri)
@@ -29,7 +29,7 @@ class Server_hora:
         for timestamp in self.timestamps:
             if self.server_running:
                 self.send_data(timestamp)
-                time.sleep(300 / multiplicador)
+                time.sleep(1 / multiplicador)
             else:
                 break   
 
@@ -45,14 +45,21 @@ class Server_hora:
             time_str = reading['hora']
             # Combine date and time strings and convert to datetime
             datetime_str = f"{date_str} {time_str}"
-            timestamp = datetime.strptime(datetime_str, '%Y-%m-%d %H:%M:%S')
+            timestamp = datetime.datetime.strptime(datetime_str, '%Y-%m-%d %H:%M:%S')
             timestamps.append(timestamp)        
         return timestamps
     
     def setupVariables(self):
-        objHorario = self.server.nodes.objects.add_object(self.idx, "Objeto_Horario")
-        fechaHora = objHorario.add_variable(self.idx, "FechaHora", self.timestamps[0])
+        # Create root folder for Horario
+        folder_horario = self.server.nodes.objects.add_folder(self.idx, "Horario")
+        
+        # Create the object inside the folder
+        objHorario = folder_horario.add_object(self.idx, "Objeto_Horario")
+        
+        # Add timestamp variable as an array of integers
+        fechaHora = objHorario.add_variable(self.idx, "FechaHora", self.timestamps[0], ua.VariantType.DateTime)
         fechaHora.set_writable()
+        
         return fechaHora
 
     def send_data(self,timestamp):
