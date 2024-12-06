@@ -1,5 +1,8 @@
+# -*- coding: utf-8 -*-
+
 import pandas as pd
 import json
+from datetime import datetime
 
 # Leer el archivo Excel
 df = pd.read_excel('data.xlsx')
@@ -11,33 +14,28 @@ data_list = []
 for index, row in df.iterrows():
     # Leer los datos de la primera y segunda columna
     fecha_hora = row.iloc[0]  
-    # Primera columna
-    aforo_mm = row.iloc[1]  
-    # Segunda columna
+    pluvimetro_mm = row.iloc[1]  
     
-
-    # Verificar si la fecha y (hora estan?¿)
+    # Verificar si la fecha y hora están presentes
     if pd.isna(fecha_hora):
-        fecha = None
-        hora = None
+        fecha_hora_iso = None
     else:
-        # Separar la fecha - la hora
-        fecha = fecha_hora.date().isoformat()
-        hora = fecha_hora.time().isoformat()
+        # Combinar la fecha y la hora en un solo campo en formato ISO 8601
+        fecha_hora_iso = fecha_hora.isoformat()
     
     # Verificar si hay un fallo en el sensor
-    if aforo_mm == 'FALLO':
-        estado = 'FALLO'
-        aforo_mm = None
+    if pluvimetro_mm == 'FALLO':
+        estado = False
+        pluvimetro_mm = None
     else:
         estado = True
+        pluvimetro_mm = float(pluvimetro_mm)
     
     # Crear un diccionario con los datos
     data_dict = {
-        'fecha': fecha,
-        'hora': hora,
-        'aforo_mm': aforo_mm,
-        'estado': estado
+        'FechaHora': fecha_hora_iso,
+        'Pluvimetro (mm)': pluvimetro_mm,
+        'Estado': estado
     }
     
     # Agregar el diccionario a la lista
@@ -47,6 +45,4 @@ for index, row in df.iterrows():
 with open('chiva.json', 'w') as json_file:
     json.dump(data_list, json_file, indent=4)
 
-
-
-print("Los datos han sido transformados y guardados en chiva.json. :D ")
+print("Los datos han sido transformados y guardados en chiva.json. :D")

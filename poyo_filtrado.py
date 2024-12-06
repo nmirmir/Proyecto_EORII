@@ -1,49 +1,39 @@
-import pandas as pd
+import csv
 import json
+from datetime import datetime
 
-# Leer el archivo CSV
-df = pd.read_csv('data.csv')
-
-# Crear una lista para almacenar los datos transformados
-data_list = []
-
-# Iterar sobre cada fila del DataFrame
-for index, row in df.iterrows():
-    # Leer los datos de la primera, segunda y tercera columna
-    fecha_hora = row.iloc[0]  # Primera columna
-    caudal_m3_s = row.iloc[1]  # Segunda columna
-    estado_sensor = row.iloc[2]  # Tercera columna
+# Función para convertir los datos a JSON
+def convert_data_to_json(input_file, output_file):
+    data = []
     
-    # Verificar si la fecha y hora es algo?¿
-    if pd.isna(fecha_hora):
-        fecha = None
-        hora = None
-    else:
-        # Separar la fecha - la hora
-        fecha = pd.to_datetime(fecha_hora).date().isoformat()
-        hora = pd.to_datetime(fecha_hora).time().isoformat()
+    with open(input_file, 'r') as infile:
+        reader = csv.reader(infile)
+        
+        # Saltar el encabezado en el archivo de entrada
+        next(reader)
+        
+        for row in reader:
+            # Combinar la fecha y la hora en un solo campo en formato ISO 8601
+            fecha_hora = datetime.strptime(row[0], '%Y-%m-%d %H:%M:%S').isoformat()
+            
+            # Convertir la segunda columna a float (considerando la coma como separador decimal y manejando valores vacíos)
+            caudal = float(row[1].replace(',', '.')) if row[1] else None
+            
+            # Convertir la tercera columna a booleano
+            estado = False if row[2].strip().upper() == 'FALLO' else True
+            
+            # Añadir los datos convertidos a la lista
+            data.append({
+                'FechaHora': fecha_hora,
+                'Caudal (m3/s)': caudal,
+                'Estado': estado
+            })
     
-    # Verificar si hay un fallo en el sensor -si es 'FALLO'
-    if estado_sensor == 'FALLO':
-        estado = False
-        caudal_m3_s = 0  
-        # Cambiar el caudal a 0 en lugar de FALLO , esto lo hago mas que otra cosa para hacer como si el sensor 'muere' o falla
-    else:
-        estado = True
-    
-    # Crear un diccionario con los datos transformados
-    data_dict = {
-        'fecha': fecha,
-        'hora': hora,
-        'caudal_m3_s': caudal_m3_s,
-        'estado': estado
-    }
-    
-    # Agregar el diccionario a la lista
-    data_list.append(data_dict)
+    # Escribir los datos en un archivo JSON
+    with open(output_file, 'w') as outfile:
+        json.dump(data, outfile, indent=4)
 
-# Guardar los datos en un archivo JSON
-with open('poyo.json', 'w') as json_file:
-    json.dump(data_list, json_file, indent=4)
+# Convertir los datos de 'data.csv' a 'poyo.json'
+convert_data_to_json('data.csv', 'poyo.json')
 
-print("Los datos han sido transformados y guardados en poyo.json.")
+print("La conversión se ha completado con éxito y se ha guardado en 'poyo.json'.")
