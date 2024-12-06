@@ -27,7 +27,7 @@
                 <DataPoint id="Hora_Pluviometro">
                     <Name>Hora</Name>
                     <DataType>DateTime</DataType>
-                    <Unit>hh:mm:ss</Unit>
+                    <Unit>yyyy,MM,dd,HH,mm,ss</Unit>
                     <Value>0</Value>        
                 </DataPoint>
             </DataPoints>
@@ -52,7 +52,7 @@
                 <DataPoint id="Hora_Aforo">
                     <Name>Hora</Name>
                     <DataType>DateTime</DataType>
-                    <Unit>hh:mm:ss</Unit>
+                    <Unit>yyyy,MM,dd,HH,mm,ss</Unit>
                     <Value>0</Value>        
                 </DataPoint>
             </DataPoints>
@@ -65,8 +65,14 @@
                 <DataPoint id="Hora">
                     <Name>Hora</Name>
                     <DataType>DateTime</DataType>
-                    <Unit>hh:mm:ss</Unit>
+                    <Unit>yyyy,MM,dd,HH,mm,ss</Unit>
                     <Value>0</Value>        
+                </DataPoint>
+                <DataPoint id="Control_Velocidad">
+                    <Name>Control de velocidad</Name>
+                    <DataType>Float</DataType>
+                    <Unit>s</Unit>
+                    <Value>1</Value>        
                 </DataPoint>
             </DataPoints>
         </Device>
