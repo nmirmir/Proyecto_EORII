@@ -12,7 +12,7 @@ class Server_hora:
         self.server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
         self.server.set_server_name("OPC UA Simulation Server")
         #self.server.set_endpoint("opc.tcp://DESKTOP-M1F986I:5350/OPCUA/SimulationServer") IP Nicolas
-        self.server.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/AforoServer")
+        self.server.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/SimulationServer")
         self.server.set_security_IDs(["Anonymous"])
         self.uri = "http://www.epsa.upv.es/entornos/NJFJ"
         self.idx = self.server.register_namespace(self.uri)
@@ -30,7 +30,7 @@ class Server_hora:
         for timestamp in self.timestamps:
             if self.server_running:
                 self.send_data(timestamp,self.multiplicador)
-                time.sleep(1.0 / self.multiplicador)
+                time.sleep(1.0 / self.multiplicador.get_value())
             else:
                 break   
 
@@ -92,10 +92,11 @@ class Server_hora:
 
     def send_data(self,timestamp,multiplicador):
         v_m = multiplicador.get_value()
-        print(v_m)
+        float_v_m = ua.Float(v_m)
+        print(multiplicador.get_value())
         print(timestamp)
         self.fechaHora.write_value(timestamp)
-        self.multiplicador.write_value(v_m)
+        self.multiplicador.write_value(float_v_m)
         
     def load_model(self): ####### Funciona
         tree = ET.parse('Modelo_datos.xml')

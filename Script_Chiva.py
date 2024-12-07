@@ -3,7 +3,6 @@ from asyncua.sync import Server, Client
 import json
 
 
-
 def data_collection(data): #funcion para sacar el dato de hora del documento en json
     Pluviometro = {"pluviometro_mm_5":[[],[],[]],"pluviometro_mm_60":[],"Estado":[[],[],[]]}
     contador = 0
