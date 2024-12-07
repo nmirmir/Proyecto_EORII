@@ -3,6 +3,7 @@ from asyncua.sync import Server
 from asyncua import ua
 import json
 import datetime
+import math as mt
 import xml.etree.ElementTree as ET
 
 class Server_caudal:
@@ -10,7 +11,8 @@ class Server_caudal:
         self.server = Server()
         self.server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
         self.server.set_server_name("OPC UA Simulation Server")
-        self.server.set_endpoint("opc.tcp://DESKTOP-M1F986I:5360/OPCUA/SimulationServer")
+        #self.server.set_endpoint("opc.tcp://DESKTOP-M1F986I:5360/OPCUA/SimulationServer")
+        self.server.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/AforoServer")
         self.server.set_security_IDs(["Anonymous"])
         self.uri = "http://www.epsa.upv.es/entornos/NJFJ/Caudal"
         self.idx = self.server.register_namespace(self.uri)
@@ -47,7 +49,12 @@ class Server_caudal:
         processed_data = []
         for reading in data:
             timestamp = datetime.datetime.strptime(reading['FechaHora'], '%Y-%m-%dT%H:%M:%S')
-            caudal_value = float(reading['Caudal (m3/s)'])  # Assuming this is the field name
+            print(reading['Caudal (m3/s)'])
+            if reading['Estado'] == True:
+                caudal_value = float(reading['Caudal (m3/s)'])  # Assuming this is the field name
+            else:
+                nan_value = float('nan')
+                caudal_value = nan_value
             processed_data.append({
                 'timestamp': timestamp,
                 'caudal': caudal_value
@@ -115,19 +122,19 @@ class Server_caudal:
         self.caudal.write_value(ua.Float(data['caudal']))
         # Estado could be updated based on some condition if needed
 
-def load_model():
-    tree = ET.parse('Modelo_datos.xml')
-    return tree.getroot()
+    def load_model(self):
+        tree = ET.parse('Modelo_datos.xml')
+        return tree.getroot()
 
 if __name__ == "__main__":
     print("-------------------")
-    root = load_model()
-    
-    # Define the namespace
-    ns = {'ns': 'http://opcfoundation.org/UA/2011/03/UANodeSet.xsd'}
-    
-    try:    
+    try: 
         server = Server_caudal()
+        root = server.load_model()
+    
+        # Define the namespace
+        ns = {'ns': 'http://opcfoundation.org/UA/2011/03/UANodeSet.xsd'}
+       
         
         # Get Equipment node and Aforo device
         equipment = root.find('.//ns:Equipment', ns)
