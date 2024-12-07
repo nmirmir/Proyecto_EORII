@@ -11,7 +11,7 @@ class Server_hora:
         self.server = Server()
         self.server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
         self.server.set_server_name("OPC UA Simulation Server")
-        self.server.set_endpoint("opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer") #IP Nicolas
+        self.server.set_endpoint("opc.tcp://DESKTOP-M1F986I:5350/OPCUA/SimulationServer") #IP Nicolas
         self.server.set_security_IDs(["Anonymous"])
         self.uri = "http://www.epsa.upv.es/entornos/NJFJ"
         self.idx = self.server.register_namespace(self.uri)
@@ -23,17 +23,17 @@ class Server_hora:
     def run(self):
         self.server.start()
         print("Server started successfully!")
-        self.fechaHora = self.setupVariables()
+        self.fechaHora,self.multiplicador = self.setupVariables()
         self.server_running = True
 
         for timestamp in self.timestamps:
             if self.server_running:
-                self.send_data(timestamp)
-                time.sleep(1 / multiplicador)
+                self.send_data(timestamp,self.multiplicador)
+                time.sleep(1 / self.multiplicador)
             else:
                 break   
 
-    def process_json_timestamps(self,json_file_path):
+    def process_json_timestamps(self,json_file_path): ####### Funciona
         # Read JSON file
         with open(json_file_path, 'r') as file:
             data = json.load(file)
@@ -41,31 +41,59 @@ class Server_hora:
         # Convert each date+time combination to datetime objects
         timestamps = []
         for reading in data:
-            date_str = reading['fecha']
-            time_str = reading['hora']
+            date_str = reading['FechaHora']
             # Combine date and time strings and convert to datetime
-            datetime_str = f"{date_str} {time_str}"
-            timestamp = datetime.datetime.strptime(datetime_str, '%Y-%m-%d %H:%M:%S')
+            timestamp = datetime.datetime.strptime(date_str, '%Y-%m-%dT%H:%M:%S')
             timestamps.append(timestamp)        
         return timestamps
     
     def setupVariables(self):
-        # Create root folder for Horario
-        folder_horario = self.server.nodes.objects.add_folder(self.idx, "Horario")
+        # Load XML model
+        root = self.load_model()
+        ns = {'ns': 'http://opcfoundation.org/UA/2011/03/UANodeSet.xsd'}
         
-        # Create the object inside the folder
-        objHorario = folder_horario.add_object(self.idx, "Objeto_Horario")
+        # Get S_Hora device from XML
+        equipment = root.find('.//ns:Equipment', ns)
+        hora_device = equipment.find(".//ns:Device[@id='S_Hora']", ns)
         
-        # Add timestamp variable as an array of integers
-        fechaHora = objHorario.add_variable(self.idx, "FechaHora", self.timestamps[0], ua.VariantType.DateTime)
+        # Create root folder using device name from XML
+        device_name = hora_device.find('ns:Name', ns).text
+        folder_horario = self.server.nodes.objects.add_folder(self.idx, device_name)
+        
+        # Create the object using device description
+        device_description = hora_device.find('ns:Description', ns).text
+        objHorario = folder_horario.add_object(self.idx, device_description)
+        
+        # Add variables based on XML DataPoints
+        datapoints = hora_device.find('ns:DataPoints', ns)
+        
+        # Create Hora (DateTime) variable
+        hora_dp = datapoints.find(".//ns:DataPoint[@id='Hora']", ns)
+        fechaHora = objHorario.add_variable(
+            self.idx,
+            hora_dp.find('ns:Name', ns).text,
+            self.timestamps[0],
+            ua.VariantType.DateTime
+        )
+        
+        # Create Multiplicador variable
+        multiplicador_dp = datapoints.find(".//ns:DataPoint[@id='Multiplicador']", ns)
+        multiplicador = objHorario.add_variable(
+            self.idx,
+            multiplicador_dp.find('ns:Name', ns).text,
+            float(multiplicador_dp.find('ns:Value', ns).text),
+            ua.VariantType.Float
+        )
+        
         fechaHora.set_writable()
-        
-        return fechaHora
+        multiplicador.set_writable()
+        return fechaHora, multiplicador
 
-    def send_data(self,timestamp):
+    def send_data(self,timestamp,multiplicador):
         self.fechaHora.write_value(timestamp)
-
-    def load_model(self):
+        self.multiplicador.write_value(multiplicador)
+        
+    def load_model(self): ####### Funciona
         tree = ET.parse('Modelo_datos.xml')
         return tree.getroot()
 
@@ -83,7 +111,7 @@ if __name__ == "__main__":
     equipment = root.find('.//ns:Equipment', ns)
     
     # Find specifically the Aforo device
-    aforo_device = equipment.find(".//ns:Device[@id='S_Aforo']", ns)
+    aforo_device = equipment.find(".//ns:Device[@id='S_Hora']", ns)
     
     print(f"Device ID: {aforo_device.get('id')}")
     print(f"Name: {aforo_device.find('ns:Name', ns).text}")
