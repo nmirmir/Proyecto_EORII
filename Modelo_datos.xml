@@ -32,24 +32,24 @@
                 </DataPoint>
             </DataPoints>
         </Device>
-        <Device id="S_Aforo">
-            <Name>Sensor de Aforo</Name>
-            <Description>Monitorea el aforo del Barranco del Poio</Description>
+        <Device id="S_Caudal">
+            <Name>Sensor de Caudal</Name>
+            <Description>Monitorea el caudal del Barranco del Poio</Description>
             <Type>Sensor</Type>
             <DataPoints>
-                <DataPoint id="Aforo">
-                    <Name>Aforo</Name>
+                <DataPoint id="Caudal">
+                    <Name>Caudal</Name>
                     <DataType>Float</DataType>
                     <Unit>m3/s</Unit>
                     <Value>0</Value>
                 </DataPoint>
-                <DataPoint id="Aforo_Estado">
-                    <Name>Estado del aforo</Name>
+                <DataPoint id="Caudal_Estado">
+                    <Name>Estado del caudal</Name>
                     <DataType>Boolean</DataType>
                     <Unit>True/False</Unit>
                     <Value>True</Value>
                 </DataPoint>
-                <DataPoint id="Hora_Aforo">
+                <DataPoint id="Hora_Caudal">
                     <Name>Hora</Name>
                     <DataType>DateTime</DataType>
                     <Unit>yyyy,MM,dd,HH,mm,ss</Unit>
