@@ -19,7 +19,10 @@ class Server_hora:
         print(f'nuestro idx: {self.idx}')
         time.sleep(1)
         self.timestamps = self.process_json_timestamps("poyo.json")
-        
+        # Add objects folder
+        self.objects = self.server.nodes.objects
+        # Create device folder
+        self.devices_folder = self.objects.add_folder(self.idx, "Devices")
 
     def run(self):
         self.server.start()
@@ -59,7 +62,7 @@ class Server_hora:
         
         # Create root folder using device name from XML
         device_name = hora_device.find('ns:Name', ns).text
-        folder_horario = self.server.nodes.objects.add_folder(self.idx, device_name)
+        folder_horario = self.devices_folder.add_folder(self.idx, device_name)
         
         # Create the object using device description
         device_description = hora_device.find('ns:Description', ns).text
@@ -115,16 +118,16 @@ if __name__ == "__main__":
     # Get Equipment node with namespace
     equipment = root.find('.//ns:Equipment', ns)
     
-    # Find specifically the Aforo device
-    aforo_device = equipment.find(".//ns:Device[@id='S_Hora']", ns)
+    # Find specifically the S_Hora device
+    hora_device = equipment.find(".//ns:Device[@id='S_Hora']", ns)
     
-    print(f"Device ID: {aforo_device.get('id')}")
-    print(f"Name: {aforo_device.find('ns:Name', ns).text}")
-    print(f"Description: {aforo_device.find('ns:Description', ns).text}")
-    print(f"Type: {aforo_device.find('ns:Type', ns).text}")
+    print(f"Device ID: {hora_device.get('id')}")
+    print(f"Name: {hora_device.find('ns:Name', ns).text}")
+    print(f"Description: {hora_device.find('ns:Description', ns).text}")
+    print(f"Type: {hora_device.find('ns:Type', ns).text}")
     
-    # Get DataPoints for Aforo
-    datapoints = aforo_device.find('ns:DataPoints', ns)
+    # Get DataPoints for S_Hora
+    datapoints = hora_device.find('ns:DataPoints', ns)
     print("\nDataPoints:")
     for datapoint in datapoints.findall('ns:DataPoint', ns):
         print(f"\t- ID: {datapoint.get('id')}")

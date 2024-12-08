@@ -11,8 +11,8 @@ class Server_caudal:
         self.server = Server()
         self.server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
         self.server.set_server_name("OPC UA Simulation Server")
-        #self.server.set_endpoint("opc.tcp://DESKTOP-M1F986I:5360/OPCUA/SimulationServer")
-        self.server.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/AforoServer")
+        self.server.set_endpoint("opc.tcp://DESKTOP-M1F986I:5360/OPCUA/SimulationServer")
+        #self.server.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/AforoServer")
         self.server.set_security_IDs(["Anonymous"])
         self.uri = "http://www.epsa.upv.es/entornos/NJFJ/Caudal"
         self.idx = self.server.register_namespace(self.uri)
@@ -49,7 +49,6 @@ class Server_caudal:
         processed_data = []
         for reading in data:
             timestamp = datetime.datetime.strptime(reading['FechaHora'], '%Y-%m-%dT%H:%M:%S')
-            print(reading['Caudal (m3/s)'])
             if reading['Estado'] == True:
                 caudal_value = float(reading['Caudal (m3/s)'])  # Assuming this is the field name
             else:
@@ -71,8 +70,8 @@ class Server_caudal:
         
         # Create folder structure
         device_name = caudal_device.find('ns:Name', ns).text
-        folder_caudal = self.server.nodes.objects.add_folder(self.idx, device_name)
-        
+        folder_caudal = self.devices_folder.add_folder(self.idx, device_name)
+
         # Create the object
         device_description = caudal_device.find('ns:Description', ns).text
         objCaudal = folder_caudal.add_object(self.idx, device_description)
@@ -106,9 +105,6 @@ class Server_caudal:
             self.timestamps[0]['timestamp'],
             ua.VariantType.DateTime
         )
-        print(f"Hora: {hora}")
-        print(f"Caudal: {caudal}")
-        print(f"Estado: {estado}")
         caudal.set_writable()
         estado.set_writable()
         hora.set_writable()
@@ -131,17 +127,33 @@ if __name__ == "__main__":
     try: 
         server = Server_caudal()
         root = server.load_model()
-    
+        print(root)
+        root = server.load_model()
+        
         # Define the namespace
         ns = {'ns': 'http://opcfoundation.org/UA/2011/03/UANodeSet.xsd'}
-       
         
-        # Get Equipment node and Aforo device
+        # Get Equipment node with namespace
         equipment = root.find('.//ns:Equipment', ns)
+        
+        # Find specifically the S_Caudal device
         caudal_device = equipment.find(".//ns:Device[@id='S_Caudal']", ns)
         
-        # Add device to server
-        #server.add_device(caudal_device, ns)
+        print(f"Device ID: {caudal_device.get('id')}")
+        print(f"Name: {caudal_device.find('ns:Name', ns).text}")
+        print(f"Description: {caudal_device.find('ns:Description', ns).text}")
+        print(f"Type: {caudal_device.find('ns:Type', ns).text}")
+        
+        # Get DataPoints for Aforo
+        datapoints = caudal_device.find('ns:DataPoints', ns)
+        print("\nDataPoints:")
+        for datapoint in datapoints.findall('ns:DataPoint', ns):
+            print(f"\t- ID: {datapoint.get('id')}")
+            print(f"\t  Name: {datapoint.find('ns:Name', ns).text}")
+            print(f"\t  DataType: {datapoint.find('ns:DataType', ns).text}")
+            print(f"\t  Unit: {datapoint.find('ns:Unit', ns).text}")
+            print(f"\t  Value: {datapoint.find('ns:Value', ns).text}")
+            print("-------------------")
         
         # Start the server
         server.run()
