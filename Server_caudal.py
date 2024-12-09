@@ -5,13 +5,25 @@ import json
 import datetime
 import math as mt
 import xml.etree.ElementTree as ET
+from asyncua.sync import Client
+
+class SubHandler:
+    def datachange_notification(self, node, val, data):
+        try:
+            print(f"Received updated timestamp: {val}")
+            server.send_data(val)  # We'll need to make server a global variable
+        except Exception as e:
+            print(f"Error in callback: {e}")
+
+    def event_notification(self, event):
+        print("Python: New event", event)
 
 class Server_caudal:
     def __init__(self):
         self.server = Server()
         self.server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
         self.server.set_server_name("OPC UA Simulation Server")
-        self.server.set_endpoint("opc.tcp://DESKTOP-M1F986I:5360/OPCUA/SimulationServer")
+        self.server.set_endpoint("opc.tcp://localhost:5360/OPCUA/SimulationServer")
         #self.server.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/AforoServer")
         self.server.set_security_IDs(["Anonymous"])
         self.uri = "http://www.epsa.upv.es/entornos/NJFJ/Caudal"
@@ -26,21 +38,37 @@ class Server_caudal:
         # Create device folder
         self.devices_folder = self.objects.add_folder(self.idx, "Devices")
 
-
+        self.hora_server_endpoint = "opc.tcp://localhost:5350/OPCUA/SimulationServer"  # Endpoint of Server_hora
 
     def run(self):
-        
         self.server.start()
         print("Server started successfully!")
         self.hora, self.caudal, self.estado = self.setupVariables()
         self.server_running = True
 
-        for data in self.timestamps:
-            if self.server_running:
-                self.send_data(data)
-                time.sleep(1.0)  # Or whatever interval you want
-            else:
-                break
+        # Connect to Server_hora and set up subscription
+        try:
+            self.hora_client = Client(self.hora_server_endpoint)
+            self.hora_client.connect()
+            
+            # Create subscription with proper handler
+            handler = SubHandler()
+            subscription = self.hora_client.create_subscription(500, handler)
+            
+            # Get the hora node and monitor it
+            hora_node = self.hora_client.get_node("ns=2;i=4")  # Replace with correct node ID
+            handle = subscription.subscribe_data_change(hora_node)
+            
+            # Keep the server running
+            while self.server_running:
+                time.sleep(0.1)
+                
+        except Exception as e:
+            print(f"Failed to setup monitoring: {e}")
+        finally:
+            if hasattr(self, 'hora_client'):
+                self.hora_client.disconnect()
+
     def process_json_data(self, json_file_path):
         with open(json_file_path, 'r') as file:
             data = json.load(file)
@@ -112,11 +140,13 @@ class Server_caudal:
 
     
 
-    def send_data(self, data):
-        print(f"Timestamp: {data['timestamp']}, Caudal: {data['caudal']}")
-        self.hora.write_value(data['timestamp'])
-        self.caudal.write_value(ua.Float(data['caudal']))
-        # Estado could be updated based on some condition if needed
+    def send_data(self, updated_hour):
+        for data in self.timestamps:
+            if data['timestamp'] == updated_hour:
+                print(f"Timestamp: {data['timestamp']}, Caudal: {data['caudal']}")
+                self.hora.write_value(data['timestamp'])
+                self.caudal.write_value(ua.Float(data['caudal']))
+                break
 
     def load_model(self):
         tree = ET.parse('Modelo_datos.xml')
@@ -125,6 +155,7 @@ class Server_caudal:
 if __name__ == "__main__":
     print("-------------------")
     try: 
+        global server  # Make server global so SubHandler can access it
         server = Server_caudal()
         root = server.load_model()
         print(root)
