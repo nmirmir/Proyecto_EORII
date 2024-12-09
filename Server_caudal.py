@@ -23,7 +23,7 @@ class Server_caudal:
         self.server = Server()
         self.server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
         self.server.set_server_name("OPC UA Simulation Server")
-        self.server.set_endpoint("opc.tcp://localhost:5360/OPCUA/SimulationServer")
+        self.server.set_endpoint("opc.tcp://LAPTOP-QJA0AD04:53530/OPCUA/ServerCaudal ")
         #self.server.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/AforoServer")
         self.server.set_security_IDs(["Anonymous"])
         self.uri = "http://www.epsa.upv.es/entornos/NJFJ/Caudal"
@@ -38,7 +38,7 @@ class Server_caudal:
         # Create device folder
         self.devices_folder = self.objects.add_folder(self.idx, "Devices")
 
-        self.hora_server_endpoint = "opc.tcp://localhost:5350/OPCUA/SimulationServer"  # Endpoint of Server_hora
+        self.hora_server_endpoint = "opc.tcp://LAPTOP-QJA0AD04:53540/OPCUA/ServerHora"  # Endpoint of Server_hora
 
     def run(self):
         self.server.start()
@@ -141,6 +141,8 @@ class Server_caudal:
     
 
     def send_data(self, updated_hour):
+        if hasattr(updated_hour, 'tzinfo'):
+            updated_hour = updated_hour.replace(tzinfo=None)
         for data in self.timestamps:
             if data['timestamp'] == updated_hour:
                 print(f"Timestamp: {data['timestamp']}, Caudal: {data['caudal']}")
