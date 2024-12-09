@@ -6,12 +6,10 @@ def data_collection(data):
     Caudal = {
         "caudal_m3_s_5": [],
         "caudal_m3_s_60": [],
-        "Estado": [],
-        "Warning": []
+        "Estado": []
     }
     contador = 0
     acum_caudal = 0
-    prev_estado = None
     
     for i in data:
         contador += 1
@@ -24,19 +22,13 @@ def data_collection(data):
             
         acum_caudal += caudal
         
-        # Check for state change from true to "FALLO"
-        current_estado = i["estado"]
-        warning = prev_estado is True and current_estado == "FALLO"
-        Caudal["Warning"].append(warning)
-        prev_estado = current_estado
-        
         if contador == 12:  # 12 readings of 5 minutes = 1 hour
             Caudal["caudal_m3_s_60"].append(acum_caudal / 12)  # Average for the hour
             contador = 0
             acum_caudal = 0
             
         Caudal["caudal_m3_s_5"].append(caudal)
-        Caudal["Estado"].append(current_estado)
+        Caudal["Estado"].append(i["estado"])
     
     return Caudal
 
@@ -85,19 +77,13 @@ def data_sending(idx, servidor, Caudal):
                                 ua.Variant(str(Caudal["Estado"][0]), 
                                          ua.VariantType.String))
     
-    # Warning as Boolean
-    Warning = mi_obj.add_variable(idx, "Warning", 
-                                 ua.Variant(bool(Caudal["Warning"][0]), 
-                                          ua.VariantType.Boolean))
-    
     Caudal_5.set_writable()
     Caudal_60.set_writable()
     Estado.set_writable()
-    Warning.set_writable()
     
-    return Caudal_60, Caudal_5, Estado, Warning
+    return Caudal_60, Caudal_5, Estado
 
-def iterative_data(Caudal, Caudal_5, Caudal_60, Estado, Warning):
+def iterative_data(Caudal, Caudal_5, Caudal_60, Estado):
     from asyncua import ua
     
     for index in range(len(Caudal["caudal_m3_s_5"])):
@@ -111,17 +97,12 @@ def iterative_data(Caudal, Caudal_5, Caudal_60, Estado, Warning):
             C60 = None
         
         estado = ua.Variant(str(Caudal["Estado"][index]), ua.VariantType.String)
-        warning = ua.Variant(bool(Caudal["Warning"][index]), ua.VariantType.Boolean)
         
-        if warning.Value:
-            print(f"WARNING: State changed from TRUE to FALLO at index {index}")
-        
-        print(f"Caudal 5min: {C5.Value}, Caudal 60min: {C60.Value if C60 is not None else None}, Estado: {estado.Value}, Warning: {warning.Value}")
+        print(f"Caudal 5min: {C5.Value}, Caudal 60min: {C60.Value if C60 is not None else None}, Estado: {estado.Value}")
         Caudal_5.write_value(C5)
         if C60 is not None:
             Caudal_60.write_value(C60)
         Estado.write_value(estado)
-        Warning.write_value(warning)
 
 if __name__ == "__main__":
     servidor = None
@@ -142,10 +123,10 @@ if __name__ == "__main__":
         Caudal = data_collection(data)
         
         print("Setting up OPC UA variables...")
-        Caudal_60, Caudal_5, Estado, Warning = data_sending(idx, servidor, Caudal)
+        Caudal_60, Caudal_5, Estado = data_sending(idx, servidor, Caudal)
         
         print("Starting data iteration...")
-        iterative_data(Caudal, Caudal_5, Caudal_60, Estado, Warning)
+        iterative_data(Caudal, Caudal_5, Caudal_60, Estado)
 
     except Exception as e:
         print(f"An error occurred: {e}")
