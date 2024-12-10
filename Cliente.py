@@ -24,57 +24,55 @@ class OPCUAClient:
         variable = objects.get_child([f"2:{self.variable_name}"])
         value = variable.get_value()
         return value
-    def control_pluvimetro(hora,pluvimetro):
-        maximo = 50.0  # mm/h
-        if pluvimetro >=  maximo :
-            estado_alerta = True
-            print(f"Estado de Alerta: Activado - Hora: {hora}, Pluvimetro: {pluvimetro}")
 
-    def control_caudal(hora , caudal):
-        maximo = 100.0  # m³/s
-        if caudal >= maximo:
-            estado_alerta = True
-            print(f"Estado de Alerta: Activado - Hora: {hora}, Caudal: {caudal}")
-
-        
 
 if __name__ == "__main__":
-    # URLs de los servidores
-    server_hora_url = "opc.tcp://DESKTOP-M1F986I:53530/OPCUA/SimulationServer"
-    server_caudal_url = "opc.tcp://LAPTOP-QJA0AD04:53530/OPCUA/SimulationServer"
-    #server_pluvimetro = ""
+    # URLs of the servers
+    server_hora_url = "opc.tcp://localhost:5350/OPCUA/SimulationServer"
+    server_caudal_url = "opc.tcp://localhost:5360/OPCUA/SimulationServer"
+    server_pluvimetro_url = "opc.tcp://localhost:5380/OPCUA/PluviometroServer"
 
-    # Nombres de las variables
-    variable_hora = "Horario/Objeto_Horario/FechaHora"
-    variable_caudal = "Devices/Aforo/FlowRate"  # Ajusta el nombre según tu configuración
-    #variable_pluvimetro = ""
+    # Names of the variables
+    variable_hora = "Devices/Horario/FechaHora"
+    variable_caudal = "Devices/Caudal/Caudal"
+    variable_pluvimetro_5min = "Devices/Pluviometro/Pluviometro_5min"
+    variable_pluvimetro_1h = "Devices/Pluviometro/Pluviometro_1h"
 
-    # Crear clientes
+    # Create clients
     client_hora = OPCUAClient(server_hora_url, variable_hora)
     client_caudal = OPCUAClient(server_caudal_url, variable_caudal)
-    #client_pluvimetro = OPCUAClient(server_pluvimetro_url, variable_pluvimetro)
-
+    client_pluvimetro_5min = OPCUAClient(server_pluvimetro_url, variable_pluvimetro_5min)
+    client_pluvimetro_1h = OPCUAClient(server_pluvimetro_url, variable_pluvimetro_1h)
 
     try:
-        # Conectar a los servidores
+        # Connect to all servers
         client_hora.connect()
         client_caudal.connect()
+        client_pluvimetro_5min.connect()
+        client_pluvimetro_1h.connect()
 
         while True:
-            # Leer y mostrar las variables
+            # Read all variables
             hora = client_hora.read_variable()
             caudal = client_caudal.read_variable()
-            #pluvimetro = client_pluvimetro.read_variable()
+            pluvimetro_5min = client_pluvimetro_5min.read_variable()
+            pluvimetro_1h = client_pluvimetro_1h.read_variable()
 
-            #monitorio por terminal de una alerta provisional
-            #client_hora.control_pluvimetro(hora ,pluvimetro)
-            client_caudal.control_caudal(hora ,caudal)
-            print(f"Hora: {hora}, Caudal del poyo: {caudal},")
+            # Print all values
+            print(f"Hora: {hora}")
+            print(f"Caudal: {caudal} m³/s")
+            print(f"Pluviometro 5min: {pluvimetro_5min} mm")
+            print(f"Pluviometro 1h: {pluvimetro_1h} mm")
+            print("-" * 50)
+            
             time.sleep(2)
+
     except Exception as e:
         print(f"An error occurred: {e}")
 
     finally:
-        # Desconectar de los servidores
+        # Disconnect from all servers
         client_hora.disconnect()
         client_caudal.disconnect()
+        client_pluvimetro_5min.disconnect()
+        client_pluvimetro_1h.disconnect()
