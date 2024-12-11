@@ -1,80 +1,160 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<OPCUAModel xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
-    <Equipment>
-        <Device id="S_Pluviometro">
-            <Name>Sensor de pluviómetro</Name>
-            <Description>Monitorea el pluviómetro de Chiva</Description>
-            <Type>Sensor</Type>
-            <DataPoints>
-                <DataPoint id="Pluviometro_5min">
-                    <Name>Pluviómetro cada 5 minutos</Name>
-                    <DataType>Float</DataType>
-                    <Unit>mm/h</Unit>
-                    <Value>0.0</Value>
-                </DataPoint>
-                <DataPoint id="Pluviometro_1h">
-                    <Name>Pluviómetro cada hora</Name>
-                    <DataType>Float</DataType>
-                    <Unit>mm/h</Unit>
-                    <Value>0.0</Value>
-                </DataPoint>
-                <DataPoint id="Pluviometro_Estado">
-                    <Name>Estado del pluviómetro</Name>
-                    <DataType>Boolean</DataType>
-                    <Unit>True/False</Unit>
-                    <Value>True</Value>
-                </DataPoint>
-                <DataPoint id="Hora_Pluviometro">
-                    <Name>Hora</Name>
-                    <DataType>DateTime</DataType>
-                    <Unit>yyyy,MM,dd,HH,mm,ss</Unit>
-                    <Value>2024-10-29T00:05:00</Value>        
-                </DataPoint>
-            </DataPoints>
-        </Device>
-        <Device id="S_Caudal">
-            <Name>Sensor de Caudal</Name>
-            <Description>Monitorea el caudal del Barranco del Poio</Description>
-            <Type>Sensor</Type>
-            <DataPoints>
-                <DataPoint id="Caudal">
-                    <Name>Caudal</Name>
-                    <DataType>Float</DataType>
-                    <Unit>m3/s</Unit>
-                    <Value>0.0</Value>
-                </DataPoint>
-                <DataPoint id="Caudal_Estado">
-                    <Name>Estado del caudal</Name>
-                    <DataType>Boolean</DataType>
-                    <Unit>True/False</Unit>
-                    <Value>True</Value>
-                </DataPoint>
-                <DataPoint id="Hora_Caudal">
-                    <Name>Hora</Name>
-                    <DataType>DateTime</DataType>
-                    <Unit>yyyy,MM,dd,HH,mm,ss</Unit>
-                    <Value>2024-10-28T10:25:00</Value>        
-                </DataPoint>
-            </DataPoints>
-        </Device>
-        <Device id="S_Hora">
-            <Name>Hora</Name>
-            <Description>Referencia de tiempo Real</Description>
-            <Type>RTC</Type>
-            <DataPoints>
-                <DataPoint id="Hora">
-                    <Name>Hora</Name>
-                    <DataType>DateTime</DataType>
-                    <Unit>yyyy,MM,dd,HH,mm,ss</Unit>
-                    <Value>2024-10-28T00:00:00</Value>        
-                </DataPoint>
-                <DataPoint id="Multiplicador">
-                    <Name>Multiplicador de velocidad de suministro</Name>
-                    <DataType>Float</DataType>
-                    <Unit>x</Unit>
-                    <Value>1.0</Value>        
-                </DataPoint>
-            </DataPoints>
-        </Device>
-    </Equipment>
-</OPCUAModel>
+<?xml version='1.0' encoding='utf-8'?>
+<UANodeSet xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" 
+    xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <NamespaceUris>
+        <Uri>http://www.epsa.upv.es/entornos/NJFJ</Uri>
+    </NamespaceUris>
+    <Aliases>
+        <Alias Alias="HasModellingRule">i=37</Alias>
+        <Alias Alias="Float">i=10</Alias>
+        <Alias Alias="Boolean">i=1</Alias>
+        <Alias Alias="DateTime">i=13</Alias>
+        <Alias Alias="HasTypeDefinition">i=40</Alias>
+        <Alias Alias="HasSubtype">i=45</Alias>
+        <Alias Alias="HasComponent">i=47</Alias>
+    </Aliases>
+
+    <!-- Pluviometro Device Type -->
+    <UAObjectType BrowseName="1:S_Pluviometro" NodeId="ns=1;i=3001">
+        <DisplayName>Sensor de pluviómetro</DisplayName>
+        <Description>Monitorea el pluviómetro de Chiva</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=3002</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=3003</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=3004</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=3005</Reference>
+        </References>
+    </UAObjectType>
+
+    <!-- Pluviometro Variables -->
+    <UAVariable BrowseName="1:Pluviometro_5min" DataType="Float" NodeId="ns=1;i=3002" ParentNodeId="ns=1;i=3001">
+        <DisplayName>Pluviómetro cada 5 minutos</DisplayName>
+        <Description>Medida del pluviómetro cada 5 minutos</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=3001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+        <Value>
+            <uax:Float>0.0</uax:Float>
+        </Value>
+    </UAVariable>
+
+    <UAVariable BrowseName="1:Pluviometro_1h" DataType="Float" NodeId="ns=1;i=3003" ParentNodeId="ns=1;i=3001">
+        <DisplayName>Pluviómetro cada hora</DisplayName>
+        <Description>Medida del pluviómetro cada hora</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=3001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+        <Value>
+            <uax:Float>0.0</uax:Float>
+        </Value>
+    </UAVariable>
+
+    <UAVariable BrowseName="1:Pluviometro_Estado" DataType="Boolean" NodeId="ns=1;i=3004" ParentNodeId="ns=1;i=3001">
+        <DisplayName>Estado del pluviómetro</DisplayName>
+        <Description>Estado operativo del pluviómetro</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=3001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+        <Value>
+            <uax:Boolean>true</uax:Boolean>
+        </Value>
+    </UAVariable>
+
+    <UAVariable BrowseName="1:Hora_Pluviometro" DataType="DateTime" NodeId="ns=1;i=3005" ParentNodeId="ns=1;i=3001">
+        <DisplayName>Hora</DisplayName>
+        <Description>Timestamp de la medición</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=3001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+        <Value>
+            <uax:DateTime>2024-10-29T00:05:00Z</uax:DateTime>
+        </Value>
+    </UAVariable>
+
+    <!-- Similar structure for Caudal Device -->
+    <UAObjectType BrowseName="1:S_Caudal" NodeId="ns=1;i=4001">
+        <DisplayName>Sensor de Caudal</DisplayName>
+        <Description>Monitorea el caudal del Barranco del Poio</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=4002</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=4003</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=4004</Reference>
+        </References>
+    </UAObjectType>
+
+    <UAVariable BrowseName="1:Caudal" DataType="Float" NodeId="ns=1;i=4002" ParentNodeId="ns=1;i=4001">
+        <DisplayName>Caudal</DisplayName>
+        <Description>Medida del caudal</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=4001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+        <Value>
+            <uax:Float>0.0</uax:Float>
+        </Value>
+    </UAVariable>
+
+    <!-- Caudal Estado Variable -->
+    <UAVariable BrowseName="1:Caudal_Estado" DataType="Boolean" NodeId="ns=1;i=4003" ParentNodeId="ns=1;i=4001">
+        <DisplayName>Estado del Caudal</DisplayName>
+        <Description>Estado operativo del sensor de caudal</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=4001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+        <Value>
+            <uax:Boolean>true</uax:Boolean>
+        </Value>
+    </UAVariable>
+
+    <UAVariable BrowseName="1:Hora_Caudal" DataType="DateTime" NodeId="ns=1;i=4004" ParentNodeId="ns=1;i=4001">
+        <DisplayName>Hora</DisplayName>
+        <Description>Timestamp de la medición del caudal</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=4001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+        <Value>
+            <uax:DateTime>2024-10-28T10:25:00Z</uax:DateTime>
+        </Value>
+    </UAVariable>
+
+    <!-- Hora Device Type -->
+    <UAObjectType BrowseName="1:S_Hora" NodeId="ns=1;i=5001">
+        <DisplayName>Servidor de Hora</DisplayName>
+        <Description>Servidor central de hora</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5002</Reference>
+        </References>
+    </UAObjectType>
+
+    <UAVariable BrowseName="1:Hora" DataType="DateTime" NodeId="ns=1;i=5002" ParentNodeId="ns=1;i=5001">
+        <DisplayName>Hora del Sistema</DisplayName>
+        <Description>Hora central del sistema</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+        <Value>
+            <uax:DateTime>2024-10-28T10:25:00Z</uax:DateTime>
+        </Value>
+    </UAVariable>
+
+</UANodeSet>
