@@ -23,7 +23,7 @@ class Server_pluviometro:
         self.server = Server()
         self.server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
         self.server.set_server_name("OPC UA Pluviometro Server")
-        self.server.set_endpoint("opc.tcp://LAPTOP-QJA0AD04:53550/OPCUA/ServerPluviometro ")
+        self.server.set_endpoint("opc.tcp://localhost:53550/OPCUA/ServerPluviometro")
         #self.server.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/AforoServer")
         self.server.set_security_IDs(["Anonymous"])
         self.uri = "http://www.epsa.upv.es/entornos/NJFJ/Pluviometro"
@@ -36,7 +36,7 @@ class Server_pluviometro:
         
         # Create device folder
         self.devices_folder = self.objects.add_folder(self.idx, "Devices")
-        self.hora_server_endpoint = "opc.tcp://LAPTOP-QJA0AD04:53540/OPCUA/ServerHora"  # Endpoint of Server_hora
+        self.hora_server_endpoint = "opc.tcp://localhost:53540/OPCUA/ServerHora"  # Endpoint of Server_hora
 
     def run(self):
         self.server.start()
