@@ -23,7 +23,7 @@ class Server_pluviometro:
         self.server = Server()
         self.server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
         self.server.set_server_name("OPC UA Pluviometro Server")
-        self.server.set_endpoint("opc.tcp://localhost:53550/OPCUA/ServerPluviometro")
+        self.server.set_endpoint("opc.tcp://DESKTOP-M1F986I:5340/OPCUA/SimulationServer")
         #self.server.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/AforoServer")
         self.server.set_security_IDs(["Anonymous"])
         self.uri = "http://www.epsa.upv.es/entornos/NJFJ/Pluviometro"
@@ -36,7 +36,10 @@ class Server_pluviometro:
         
         # Create device folder
         self.devices_folder = self.objects.add_folder(self.idx, "Devices")
-        self.hora_server_endpoint = "opc.tcp://localhost:53540/OPCUA/ServerHora"  # Endpoint of Server_hora
+        self.hora_server_endpoint = "opc.tcp://DESKTOP-M1F986I:5330/OPCUA/SimulationServer"  # Endpoint of Server_hora
+        self.contador = 0
+        self.acumulador_1h = 0
+        self.hourly_values = []  # List to store hourly accumulated values
 
     def run(self):
         self.server.start()
@@ -168,12 +171,36 @@ class Server_pluviometro:
             updated_hour = updated_hour.replace(tzinfo=None)
         
         for data in self.timestamps:
-            #print(f"Comparing - JSON: {data['timestamp']} with received: {updated_hour}")
             if data['timestamp'] == updated_hour:
                 print(f"Match found! Timestamp: {data['timestamp']}, Pluviometro: {data['pluviometro']}")
                 self.hora.write_value(data['timestamp'])
                 self.pluviometro_5min.write_value(ua.Float(data['pluviometro']))
-                self.pluviometro_1h.write_value(ua.Float(data['pluviometro']))
+                
+                # Accumulate values
+                self.acumulador_1h += data['pluviometro']
+                print(f"acumulador_1h: {self.acumulador_1h}")
+                self.contador += 1
+                
+                # When we reach 12 periods (1 hour)
+                if self.contador == 12:
+                    self.pluviometro_1h.write_value(ua.Float(self.acumulador_1h))
+                    print(f"dato_1h: {self.acumulador_1h}")
+                    
+                    # Store the hourly value with its timestamp
+                    hourly_data = {
+                        'timestamp': data['timestamp'],
+                        'value': self.acumulador_1h
+                    }
+                    self.hourly_values.append(hourly_data)
+                    
+                    # Print hourly history
+                    print("\nHourly History:")
+                    for idx, hour_data in enumerate(self.hourly_values, 1):
+                        print(f"Hour {idx}: {hour_data['timestamp']} - {hour_data['value']:.2f} mm")
+                    
+                    # Reset counters for next hour
+                    self.contador = 0
+                    self.acumulador_1h = 0
                 break
 
     def load_model(self):
