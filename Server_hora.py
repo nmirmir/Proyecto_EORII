@@ -10,8 +10,8 @@ class Server_hora:
     def __init__(self):
         self.server = Server()
         self.server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
-        self.server.set_server_name("OPC UA Simulation Server")
-        self.server.set_endpoint("opc.tcp://DESKTOP-M1F986I:5330/OPCUA/SimulationServer")
+        self.server.set_server_name("OPC UA Hora Server")
+        self.server.set_endpoint("opc.tcp://0.0.0.0:53540/OPCUA/ServerHora")
         self.server.set_security_IDs(["Anonymous"])
         self.uri = "http://www.epsa.upv.es/entornos/NJFJ"
         self.idx = self.server.register_namespace(self.uri)

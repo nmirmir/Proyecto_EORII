@@ -23,20 +23,16 @@ class Server_pluviometro:
         self.server = Server()
         self.server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
         self.server.set_server_name("OPC UA Pluviometro Server")
-        self.server.set_endpoint("opc.tcp://DESKTOP-M1F986I:5340/OPCUA/SimulationServer")
-        #self.server.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/AforoServer")
+        self.server.set_endpoint("opc.tcp://0.0.0.0:53560/OPCUA/ServerPluviometro")
         self.server.set_security_IDs(["Anonymous"])
         self.uri = "http://www.epsa.upv.es/entornos/NJFJ/Pluviometro"
         self.idx = self.server.register_namespace(self.uri)
         print(f'nuestro idx: {self.idx}')
         time.sleep(1)
         self.timestamps = self.process_json_data("chiva.json")
-        # Add objects folder
         self.objects = self.server.nodes.objects
-        
-        # Create device folder
         self.devices_folder = self.objects.add_folder(self.idx, "Devices")
-        self.hora_server_endpoint = "opc.tcp://DESKTOP-M1F986I:5330/OPCUA/SimulationServer"  # Endpoint of Server_hora
+        self.hora_server_endpoint = "opc.tcp://127.0.0.1:53540/OPCUA/ServerHora"
         self.contador = 0
         self.acumulador_1h = 0
         self.hourly_values = []  # List to store hourly accumulated values
@@ -47,28 +43,30 @@ class Server_pluviometro:
         self.hora, self.pluviometro_5min, self.pluviometro_1h, self.estado = self.setupVariables()
         self.server_running = True
 
-        # Connect to Server_hora and set up subscription
-        try:
-            self.hora_client = Client(self.hora_server_endpoint)
-            self.hora_client.connect()
-            
-            # Create subscription with proper handler
-            handler = SubHandler()
-            subscription = self.hora_client.create_subscription(500, handler)
-            
-            # Get the hora node and monitor it
-            hora_node = self.hora_client.get_node("ns=2;i=4")  # Replace with correct node ID
-            handle = subscription.subscribe_data_change(hora_node)
-            
-            # Keep the server running
-            while self.server_running:
+        while self.server_running:
+            try:
+                if not hasattr(self, 'hora_client'):
+                    print("Connecting to hora server...")
+                    self.hora_client = Client(self.hora_server_endpoint)
+                    self.hora_client.connect()
+                    print("Connected to hora server")
+                    
+                    handler = SubHandler()
+                    subscription = self.hora_client.create_subscription(500, handler)
+                    hora_node = self.hora_client.get_node("ns=2;i=4")
+                    handle = subscription.subscribe_data_change(hora_node)
+                
                 time.sleep(0.1)
                 
-        except Exception as e:
-            print(f"Failed to setup monitoring: {e}")
-        finally:
-            if hasattr(self, 'hora_client'):
-                self.hora_client.disconnect()
+            except Exception as e:
+                print(f"Connection error: {e}")
+                if hasattr(self, 'hora_client'):
+                    try:
+                        self.hora_client.disconnect()
+                    except:
+                        pass
+                    delattr(self, 'hora_client')
+                time.sleep(5)  # Wait before retrying
 
     def process_json_data(self, json_file_path):
         with open(json_file_path, 'r') as file:

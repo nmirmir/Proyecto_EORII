@@ -22,9 +22,8 @@ class Server_caudal:
     def __init__(self):
         self.server = Server()
         self.server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
-        self.server.set_server_name("OPC UA Simulation Server")
-        self.server.set_endpoint("opc.tcp://localhost:53530/OPCUA/ServerCaudal")
-        #self.server.set_endpoint("opc.tcp://LAPTOP-PIE5PVF8:53540/OPCUA/AforoServer")
+        self.server.set_server_name("OPC UA Caudal Server")
+        self.server.set_endpoint("opc.tcp://0.0.0.0:53530/OPCUA/ServerCaudal")
         self.server.set_security_IDs(["Anonymous"])
         self.uri = "http://www.epsa.upv.es/entornos/NJFJ/Caudal"
         self.idx = self.server.register_namespace(self.uri)
@@ -38,7 +37,8 @@ class Server_caudal:
         # Create device folder
         self.devices_folder = self.objects.add_folder(self.idx, "Devices")
 
-        self.hora_server_endpoint = "opc.tcp://localhost:53540/OPCUA/ServerHora"  # Endpoint of Server_hora
+        # Update hora server endpoint to use 0.0.0.0
+        self.hora_server_endpoint = "opc.tcp://127.0.0.1:53540/OPCUA/ServerHora"
 
     def run(self):
         self.server.start()
@@ -46,28 +46,31 @@ class Server_caudal:
         self.hora, self.caudal, self.estado = self.setupVariables()
         self.server_running = True
 
-        # Connect to Server_hora and set up subscription
-        try:
-            self.hora_client = Client(self.hora_server_endpoint)
-            self.hora_client.connect()
-            
-            # Create subscription with proper handler
-            handler = SubHandler()
-            subscription = self.hora_client.create_subscription(500, handler)
-            
-            # Get the hora node and monitor it
-            hora_node = self.hora_client.get_node("ns=2;i=4")  # Replace with correct node ID
-            handle = subscription.subscribe_data_change(hora_node)
-            
-            # Keep the server running
-            while self.server_running:
+        # Modified connection logic
+        while self.server_running:
+            try:
+                if not hasattr(self, 'hora_client'):
+                    print("Connecting to hora server...")
+                    self.hora_client = Client(self.hora_server_endpoint)
+                    self.hora_client.connect()
+                    print("Connected to hora server")
+                    
+                    handler = SubHandler()
+                    subscription = self.hora_client.create_subscription(500, handler)
+                    hora_node = self.hora_client.get_node("ns=2;i=4")
+                    handle = subscription.subscribe_data_change(hora_node)
+                
                 time.sleep(0.1)
                 
-        except Exception as e:
-            print(f"Failed to setup monitoring: {e}")
-        finally:
-            if hasattr(self, 'hora_client'):
-                self.hora_client.disconnect()
+            except Exception as e:
+                print(f"Connection error: {e}")
+                if hasattr(self, 'hora_client'):
+                    try:
+                        self.hora_client.disconnect()
+                    except:
+                        pass
+                    delattr(self, 'hora_client')
+                time.sleep(5)  # Wait before retrying
 
     def process_json_data(self, json_file_path):
         with open(json_file_path, 'r') as file:
@@ -154,6 +157,7 @@ class Server_caudal:
         tree = ET.parse('Modelo_datos.xml')
         return tree.getroot()
 
+# Move the main execution code outside the class
 if __name__ == "__main__":
     print("-------------------")
     try: 
@@ -161,7 +165,6 @@ if __name__ == "__main__":
         server = Server_caudal()
         root = server.load_model()
         print(root)
-        root = server.load_model()
         
         # Define the namespace
         ns = {'ns': 'http://opcfoundation.org/UA/2011/03/UANodeSet.xsd'}
@@ -191,10 +194,6 @@ if __name__ == "__main__":
         # Start the server
         server.run()
         
-        # Keep the server running
-        while True:
-            time.sleep(1)
-            
     except Exception as e:
         print(f"An error occurred: {e}")
     finally:
